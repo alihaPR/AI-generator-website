@@ -68,10 +68,7 @@
 
   --bg-blur-1: rgba(24, 24, 24, 0.1); 
   --bg-blur-2: rgba(24, 24, 24, 0.95); 
-  --bg-blur-3: rgba(0, 0, 0, 0.1);
-  /* --bg-blur-3: rgb(0 0 0 / var(--tw-bg-opacity, 1)) --tw-bg-opacity: 0.3; */
-  
-   
+  --bg-blur-3: rgba(0, 0, 0, 0.1);   
   --bg-blur-overlay: blur(280px);
 
   --text-color-3: #ffffff; /**/
@@ -88,7 +85,7 @@
   --text-color-6: #ffffff; /**/
   --text-color-7: #F6F6F6; /**/
   --text-color-8: #518aae; /**/
-  --text-color-box-popup: #bfbfbf81;
+  --text-color-box-popup: #bfbfbf;
 
 
   --title-color-1: #3a3a3a;
