@@ -91,20 +91,20 @@ html {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background-image: url(/image/poster1.JPG);
+  background-image: url(/image/poster2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 .poster-cards:nth-child(2){
-  background-image: url(/image/file_00000000790861f79e41f5b26e44dd77.png);
+  background-image: url(/image/file_00000000790861f79e41f5b26e44dd77.webp);
 }
 .poster-cards:nth-child(3){
-  background-image: url(/image/claymation.png);
+  background-image: url(/image/claymation.webp);
 }
 .poster-cards:nth-child(4){
   /* background-image: url(/image/5.jpg); */
-  background-image: url(/image/pixar\ 3d.png);
+  background-image: url(/image/pixar3d.webp);
 }
 
 .poster-card__content{
