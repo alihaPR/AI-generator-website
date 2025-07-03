@@ -189,4 +189,14 @@ function openPopup(el) {
   imgAfter.src = el.getAttribute('data-img-after') || '';
   promptText.innerText = el.getAttribute('data-prompt') || '';
   popup.classList.add('show');
+   popup.classList.add('show');
+
+  // ریست اسلایدر به وسط
+  const slider = popup.querySelector('.popup-slider');
+  const before = popup.querySelector('.before');
+  if (slider && before) {
+    slider.style.left = '50%';
+    before.style.clipPath = 'inset(0 50% 0 0)';
+    if (slider.tagName === 'INPUT') slider.value = 50; // اگر اسلایدر input هست
+  }
 }

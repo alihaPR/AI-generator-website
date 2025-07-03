@@ -1,5 +1,7 @@
 /* ---------------------------------------------------------- color -------------------------------------------------------------*/
-
+html {
+  scroll-behavior: smooth;
+}
 
 :root{
 
@@ -139,6 +141,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 
 /* ----------------------------------------------- Main ----------------------------------------------- */
 
@@ -738,35 +741,37 @@ html {
   position: absolute;
 }
 
+/* ...existing code... */
 .checkbox-label {
   background-color: #0F0F0F;
   width: 49px;
   height: 26px;
   border-radius: 50px;
   position: relative;
-  padding: 5px;
+  padding: 4px 6px; /* فاصله داخلی چپ و راست */
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  box-sizing: border-box;
 }
-
 
 .checkbox-label .ball {
   background-color: #fff;
   width: 18px;
   height: 18px;
   position: absolute;
-  left: 5px;
+  left: 6px; /* با padding هماهنگ شود */
   top: 4px;
   border-radius: 50%;
   transition: transform 0.2s linear;
+  z-index: 3;
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px);
+  transform: translateX(20px); /* مقدار دقیق برای وسط خورشید */
 }
+/* ...existing code... */
 
 button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.poster-btn__btn:hover{
   background-color: var(--hover-color-2);
@@ -776,4 +781,17 @@ button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.post
   transition: all 0.2s ease-in-out;
 }
 
+/* ---------------------------darkmood speed------------------------------ */
+/* ...existing code... */
+:root, .dark-mode {
+  transition: 
+    background-color 0.4s cubic-bezier(.4,0,.2,1),
+    color 0.4s cubic-bezier(.4,0,.2,1);
+}
 
+body, .main, .header, .footer {
+  transition: 
+    background-color 0.4s cubic-bezier(.4,0,.2,1),
+    color 0.4s cubic-bezier(.4,0,.2,1);
+}
+/* ...existing code... */

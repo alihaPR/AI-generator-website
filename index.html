@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,135 +8,146 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
 </head>
+
 <body>
-    
+
     <!-- header -->
-    
+
     <header class="header">
-                        
-                        <a href="#" class="logo">Dream morph</a>
-                        
-                        <ul class="navbar">
-                          <li class="navbar__item">
-                            <a href="/index.html" class="navbar__link">Home</a>
-                          </li>
-                          <li class="navbar__item">
-                            <a href="#gallery" class="navbar__link">Gallery</a>
-                          </li>
-                      
-                        <li class="navbar__item dropdown">
-                            <a href="#tools" class="navbar__link">Tools</a>
-                            <div class="dropdown-menu">
-                                <div class="dropdown-row"  data-popup="popup1"
-                                        data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
-                                        data-img-before="/image/202505182125312.webp"
-                                        data-img-after="/image/20250518212531.webp"
-                                        onclick="openPopup(this)">
-                                    <img src="/image/20250518212531.webp" alt="Tool 1" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>image Upscaler</h5>
-                                        <p>Quickly enhance and upscale your images in one-click</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
-                                    data-img-before="/image/imggallery2.webp"
-                                    data-img-after="/image/imggallery.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/imggallery2.webp" alt="Tool 2" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Remove backgrounds</h5>
-                                        <p>Easily remove or change your photo background</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
-                                    data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
-                                    data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/1750148089165.webp" alt="Tool 3" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Social Glowr</h5>
-                                        <p>Stylish visuals for modern social media posts</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
-                                    data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
-                                    data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/1750148026856.webp" alt="Tool 4" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Skin Magic</h5>
-                                        <p>Clear, soft, and natural face retouch</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row"class="dropdown-row" data-popup="popup1"
-                                    data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
-                                    data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
-                                    data-img-after="/image/1924164fff129f91b75158eaf944c137.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/1750148194171.webp" alt="Tool 5" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Product Poster</h5>
-                                        <p>Eye-catching product ads with sharp design</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row"class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
-                                    data-img-before="/image/photo19483072295.jpg"
-                                    data-img-after="/image/photo19452945200.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/photo19483072295.jpg" alt="Tool 6" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>3*4 image</h5>
-                                        <p>Creat picturs from text,with AI</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                      
-                          <li class="navbar__item">
-                            <a href="/prompts.html" class="navbar__link">Prompts</a>
-                          </li>
-                        </ul>
+
+        <a href="#" class="logo">Dream morph</a>
+
+        <ul class="navbar">
+            <li class="navbar__item">
+                <a href="/index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#gallery" class="navbar__link">Gallery</a>
+            </li>
+
+            <li class="navbar__item dropdown">
+                <a href="#tools" class="navbar__link">Tools</a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-row" data-popup="popup1"
+                        data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
+                        data-img-before="/image/202505182125312.webp" data-img-after="/image/20250518212531.webp"
+                        onclick="openPopup(this)">
+                        <img src="/image/20250518212531.webp" alt="Tool 1" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>image Upscaler</h5>
+                            <p>Quickly enhance and upscale your images in one-click</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" data-popup="popup1"
+                        data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
+                        data-img-before="/image/imggallery2.webp" data-img-after="/image/imggallery.webp"
+                        onclick="openPopup(this)">
+                        <img src="/image/imggallery2.webp" alt="Tool 2" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Remove backgrounds</h5>
+                            <p>Easily remove or change your photo background</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
+                        data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
+                        data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp" onclick="openPopup(this)">
+                        <img src="/image/1750148089165.webp" alt="Tool 3" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Social Glowr</h5>
+                            <p>Stylish visuals for modern social media posts</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
+                        data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
+                        data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp" onclick="openPopup(this)">
+                        <img src="/image/1750148026856.webp" alt="Tool 4" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Skin Magic</h5>
+                            <p>Clear, soft, and natural face retouch</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
+                        data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
+                        data-img-after="/image/1924164fff129f91b75158eaf944c137.webp" onclick="openPopup(this)">
+                        <img src="/image/1750148194171.webp" alt="Tool 5" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Product Poster</h5>
+                            <p>Eye-catching product ads with sharp design</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
+                        data-img-before="/image/photo19483072295.jpg" data-img-after="/image/photo19452945200.webp"
+                        onclick="openPopup(this)">
+                        <img src="/image/photo19483072295.jpg" alt="Tool 6" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>3*4 image</h5>
+                            <p>Creat picturs from text,with AI</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="navbar__item">
+                <a href="/prompts.html" class="navbar__link">Prompts</a>
+            </li>
+        </ul>
 
 
-                        <div class="navbar__btn">
-                            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="navbar__btn">
+            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="white"/>
                             </svg> -->
-                        
-                            <div class="navbar__right-placeholder" >
-                                <!-- جایگزین دکمه‌های قبلی دارک/لایت -->
-                                <div class="theme-toggle">
-                                  <input type="checkbox" class="checkbox" id="theme-checkbox">
-                                  <label for="theme-checkbox" class="checkbox-label">
-                                    <span class="ball"></span>
-                                  </label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
+
+            <!-- ...dark mood  btn... -->
+            <div class="navbar__right-placeholder">
+                <div class="theme-toggle">
+                    <input type="checkbox" class="checkbox" id="theme-checkbox">
+                    <label for="theme-checkbox" class="checkbox-label">
+                        <!-- اول ماه، بعد خورشید -->
+                        <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="#fff" />
+                        </svg>
+                        <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="5" fill="#fff" />
+                            <g stroke="#fff" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                        </svg>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <!-- Main -->
 
     <section class="main">
         <div class="main__background">
-          
-          <div class="background-shapes">
-            <div class="circle__left"></div>
-            <div class="circle__right"></div>
-            <div class="blur-overlay"></div>
-          </div>
 
-          <div class="container">
+            <div class="background-shapes">
+                <div class="circle__left"></div>
+                <div class="circle__right"></div>
+                <div class="blur-overlay"></div>
+            </div>
+
+            <div class="container">
 
                 <!-- Home Website -->
 
-                
+
                 <section class="home" id="home">
                     <div class="Home-content">
                         <h1 class="Home-title">Studio Open Ai Image Generator</h1>
@@ -145,7 +157,7 @@
                             <a href="/prompts.html" class="Home-btn__left">Explore</a>
                             <a href="#gallery" class="Home-btn__rigth">Wana see more?</a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="poster">
                         <div class="poster-cards">
                             <div class="poster-card__content">
@@ -153,13 +165,11 @@
                                     <h4>Blue Bloom</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="A close-up portrait of a young woman with natural soft lighting, short black hair, and minimal makeup. Her face is partially covered by a lush arrangement of realistic, delicate blue flowers with visible petal textures and dark centers, blending naturally with her skin. The flowers should appear freshly picked and organic, with fine botanical detail. Background is a solid, smooth sky blue, creating a dreamy and minimalistic atmosphere. The photo has an ethereal, high-fashion editorial feel, with ultra-high definition and depth of field to emphasize the softness of the flowers and the calm expression of the subject. --v 6 --ar 3:4 --style photographic --quality 2"
-                                data-img-before="/image/poster2.webp"
-                                data-img-after="/image/poster1.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="A close-up portrait of a young woman with natural soft lighting, short black hair, and minimal makeup. Her face is partially covered by a lush arrangement of realistic, delicate blue flowers with visible petal textures and dark centers, blending naturally with her skin. The flowers should appear freshly picked and organic, with fine botanical detail. Background is a solid, smooth sky blue, creating a dreamy and minimalistic atmosphere. The photo has an ethereal, high-fashion editorial feel, with ultra-high definition and depth of field to emphasize the softness of the flowers and the calm expression of the subject. --v 6 --ar 3:4 --style photographic --quality 2"
+                                    data-img-before="/image/poster2.webp" data-img-after="/image/poster1.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -169,30 +179,27 @@
                                     <h4>Low poly</h4>
                                     <p>DM</p>
                                 </div>
-                                    <a href="#" class="poster-card__btn"
-                                       data-popup="popup1"
-                                       data-prompt="““Redo this image in the Low poly 3D style, simplified geometry, hard angular edges, flat color shading, minimalist lighting, retro 3D look.”"
-                                       data-img-before="/image/file_00000000790861f79e41f5b26e44dd77.webp"
-                                       data-img-after="/image/35b8cdeab7fe3ea2cd9ffe2193912665.webp"
-                                       onclick="openPopup(this)">
-                                       Get start
-                                    </a>
-                                </div>
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="““Redo this image in the Low poly 3D style, simplified geometry, hard angular edges, flat color shading, minimalist lighting, retro 3D look.”"
+                                    data-img-before="/image/file_00000000790861f79e41f5b26e44dd77.webp"
+                                    data-img-after="/image/35b8cdeab7fe3ea2cd9ffe2193912665.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
+                                </a>
                             </div>
+                        </div>
                         <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Claymation</h4>
                                     <p>DM</p>
                                 </div>
-                                     <a href="#" class="poster-card__btn"
-                                        data-popup="popup1"
-                                        data-prompt="“Redo this image in the Claymation style, handmade clay textures, visible fingerprints and smudges, slightly uneven proportions, stop-motion aesthetic, soft lighting, expressive sculpted faces.”"
-                                        data-img-before="/image/claymation.webp"
-                                        data-img-after="/image/claymation1.webp"
-                                        onclick="openPopup(this)">
-                                        Get start
-                                    </a>
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in the Claymation style, handmade clay textures, visible fingerprints and smudges, slightly uneven proportions, stop-motion aesthetic, soft lighting, expressive sculpted faces.”"
+                                    data-img-before="/image/claymation.webp" data-img-after="/image/claymation1.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
+                                </a>
                             </div>
                         </div>
                         <div class="poster-cards">
@@ -201,21 +208,19 @@
                                     <h4>Pixar 3D</h4>
                                     <p>DM</p>
                                 </div>
-                                    <a href="#" class="poster-card__btn"
-                                        data-popup="popup1"
-                                        data-prompt="“Redo this image in a charming 3D animated style, clean, stylized character designs with expressive yet subtle facial animation, cinematic warm lighting, beautifully composed shots, high-quality polished textures, and a heartwarming tone. Emphasize storytelling through posture, expression, and framing.”"
-                                        data-img-before="/image/pixar3d.webp"
-                                        data-img-after="/image/pixar3d2.webp"
-                                        onclick="openPopup(this)">
-                                         Get start
-                                    </a>
-                                </div>
-                         </div>
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in a charming 3D animated style, clean, stylized character designs with expressive yet subtle facial animation, cinematic warm lighting, beautifully composed shots, high-quality polished textures, and a heartwarming tone. Emphasize storytelling through posture, expression, and framing.”"
+                                    data-img-before="/image/pixar3d.webp" data-img-after="/image/pixar3d2.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    
-                        <a href="/prompts.html"  class="poster-btn__btn">See More</a>
-                    
-                        
+
+                    <a href="/prompts.html" class="poster-btn__btn">See More</a>
+
+
                 </section>
 
                 <!-- Gallary Website -->
@@ -236,19 +241,19 @@
                                 </div>
                                 <div class="gallary-text">
                                     <h4>Remove backgrounds from images</h4>
-                                    <p>Easily remove or change your photo background with our background eraser in one-click. Super precise and fully automated AI-background removal in just 3 seconds!</p>
-                                    
-                                    <a href="#" class="gallery-btn"
-                                    data-popup="popup1"
-                                    data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
-                                    data-img-before="/image/imggallery2.webp"
-                                    data-img-after="/image/imggallery.webp"
-                                    onclick="openPopup(this)">
-                                   Prompt filter
-                                   </a>
+                                    <p>Easily remove or change your photo background with our background eraser in
+                                        one-click. Super precise and fully automated AI-background removal in just 3
+                                        seconds!</p>
+
+                                    <a href="#" class="gallery-btn" data-popup="popup1"
+                                        data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
+                                        data-img-before="/image/imggallery2.webp"
+                                        data-img-after="/image/imggallery.webp" onclick="openPopup(this)">
+                                        Prompt filter
+                                    </a>
                                 </div>
-                            </div> 
-                            
+                            </div>
+
                             <div class="gallary-item">
                                 <div class="gallary-img">
                                     <div class="before-image">
@@ -261,16 +266,15 @@
                                 </div>
                                 <div class="gallary-text">
                                     <h4>image Upscaler</h4>
-                                    <p>Quickly enhance and upscale your images in one-click. Super clear, high-resolution results powered by AI all in just 3 seconds!</p>
+                                    <p>Quickly enhance and upscale your images in one-click. Super clear,
+                                        high-resolution results powered by AI all in just 3 seconds!</p>
                                     <div class="gallary-btn-butten">
-                                    <a href="#" class="gallery-btn"
-                                        data-popup="popup1"
-                                        data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters "
-                                        data-img-before="/image/20250518212531.webp"
-                                        data-img-after="/image/202505182125312.webp"
-                                        onclick="openPopup(this)">
-                                        Prompt filter
-                                    </a>
+                                        <a href="#" class="gallery-btn" data-popup="popup1"
+                                            data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters "
+                                            data-img-before="/image/20250518212531.webp"
+                                            data-img-after="/image/202505182125312.webp" onclick="openPopup(this)">
+                                            Prompt filter
+                                        </a>
                                         <a href="/prompts.html" class="gallary-btn-Rigth">more</a>
                                     </div>
                                 </div>
@@ -279,17 +283,19 @@
                         </div>
                     </div>
                 </section>
-                
+
             </div>
 
             <!-- Footer Website -->
-            
+
             <section class="footer">
                 <div class="fotter-top">
-                
+
                     <div class="fotter-tex">
                         <h4>About Us|Dream Morph</h4>
-                        <p>Dream Morph ia an Ai image generation platform that turns your ideas into stunning visuals in seconds. Our mission is to make creativity easy and accessible using powerful artificial intelligens. </p>
+                        <p>Dream Morph ia an Ai image generation platform that turns your ideas into stunning visuals in
+                            seconds. Our mission is to make creativity easy and accessible using powerful artificial
+                            intelligens. </p>
                     </div>
                     <div class="fotter-item">
                         <div class="footer-links">
@@ -302,23 +308,27 @@
                             <h4>Contact</h4>
                             <p><a href="mailto:example@gmail.com" class="fotter-contact-1">Email:adddd@gmail.com</a></p>
                             <p><a href="tel:+9809187623454" class="fotter-contact-2">Insta:dreammorph</a></p>
-                            <p><a href="https://www.instagram.com" target="_blank" class="fotter-contact-3">Tel:+987267373646</a></p>
+                            <p><a href="https://www.instagram.com" target="_blank"
+                                    class="fotter-contact-3">Tel:+987267373646</a></p>
                         </div>
                         <a href="#home" class="fotter-contact-btn footer-scroll-btn">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.99984 15.8334V4.16675M9.99984 4.16675L4.1665 10.0001M9.99984 4.16675L15.8332 10.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.99984 15.8334V4.16675M9.99984 4.16675L4.1665 10.0001M9.99984 4.16675L15.8332 10.0001"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
                     </div>
                 </div>
                 <div class="fottor-butem">
-                
+
                     <div class="fotter-copyright">
                         <p>© 2025 Dream Morph. All rights reserved.</p>
                     </div>
                 </div>
             </section>
-    
+
         </div>
     </section>
 
@@ -330,46 +340,51 @@
 
             <div class="popup-content-left">
 
-              <h4>How to use the prompt</h4>
+                <h4>How to use the prompt</h4>
 
-              <ul class="popup-menu">
-                <li class="popup-menu-item">
-                    Open <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
-                </li>
-                <li class="popup-menu-item">
-                    Select + And Select Your photo
-                </li>
-                <li class="popup-menu-item">
-                    Copy The Command Below And Paste It Into <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
-                </li>
-              </ul>
+                <ul class="popup-menu">
+                    <li class="popup-menu-item">
+                        Open <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
+                    </li>
+                    <li class="popup-menu-item">
+                        Select + And Select Your photo
+                    </li>
+                    <li class="popup-menu-item">
+                        Copy The Command Below And Paste It Into <a href="https://chat.openai.com/"
+                            target="_blank">ChatGpt</a> Ai
+                    </li>
+                </ul>
 
-            <div class="popup-box">
-              <span id="promptText">Prompt اینجا قرار می‌گیره</span>
-              <svg class="copy-btn" onclick="copyPrompt()" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.6665 20H5.33317C4.62593 20 3.94765 19.7191 3.44755 19.219C2.94746 18.7189 2.6665 18.0406 2.6665 17.3334V5.33335C2.6665 4.62611 2.94746 3.94783 3.44755 3.44774C3.94765 2.94764 4.62593 2.66669 5.33317 2.66669H17.3332C18.0404 2.66669 18.7187 2.94764 19.2188 3.44774C19.7189 3.94783 19.9998 4.62611 19.9998 5.33335V6.66669M14.6665 12H26.6665C28.1393 12 29.3332 13.1939 29.3332 14.6667V26.6667C29.3332 28.1394 28.1393 29.3334 26.6665 29.3334H14.6665C13.1937 29.3334 11.9998 28.1394 11.9998 26.6667V14.6667C11.9998 13.1939 13.1937 12 14.6665 12Z"
-                 stroke-width="2" />
-              </svg>
+                <div class="popup-box">
+                    <span id="promptText">Prompt اینجا قرار می‌گیره</span>
+                    <svg class="copy-btn" onclick="copyPrompt()" width="24" height="24" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.6665 20H5.33317C4.62593 20 3.94765 19.7191 3.44755 19.219C2.94746 18.7189 2.6665 18.0406 2.6665 17.3334V5.33335C2.6665 4.62611 2.94746 3.94783 3.44755 3.44774C3.94765 2.94764 4.62593 2.66669 5.33317 2.66669H17.3332C18.0404 2.66669 18.7187 2.94764 19.2188 3.44774C19.7189 3.94783 19.9998 4.62611 19.9998 5.33335V6.66669M14.6665 12H26.6665C28.1393 12 29.3332 13.1939 29.3332 14.6667V26.6667C29.3332 28.1394 28.1393 29.3334 26.6665 29.3334H14.6665C13.1937 29.3334 11.9998 28.1394 11.9998 26.6667V14.6667C11.9998 13.1939 13.1937 12 14.6665 12Z"
+                            stroke-width="2" />
+                    </svg>
+                </div>
+
+
             </div>
-
-
-            </div>
-          <div class="popup-content-right">
+            <div class="popup-content-right">
                 <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
                 <div class="container-img-prompts">
-                 <img id="popupImageBefore" class="before" src="" alt="">
-                 <img id="popupImageAfter" class="after" src="" alt="">
-                 <div class="popup-slider"></div>
+                    <img id="popupImageBefore" class="before" src="" alt="">
+                    <img id="popupImageAfter" class="after" src="" alt="">
+                    <div class="popup-slider"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="copy-notification" style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
+    <div id="copy-notification"
+        style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
         prompt copied to clipboard!
     </div>
-    
+
     <script src="./script/script.js"></script>
     <script src="/script/theme.js"></script>
 
 </body>
+
 </html>
