@@ -59,7 +59,7 @@ html {
   --bg-color-1: #ffffff00;
   --bg-color-2: #FFFFFF;
   --bg-color-3: #F9F9F9;
-  --bg-color-4: #3AA3AF;
+  --bg-color-4: #fafdfd;
   --bg-color-5: #3AA3AF;
   --bg-color-footer: #050505; /* footer bg */
   --bg-color-footer-slide: #0c0c0cea; /* footer slide */
@@ -80,7 +80,7 @@ html {
   --text-color-3: #504f4f;
   --text-color-4: #010101; /**/
   --text-color-4-1: #ffffff; /**/
-  --text-color-4-2: #ffffff; /**/
+  --text-color-4-2: #0c0c0c; /**/
   --text-color-4-btn: #ffffff; /**/
   --text-color-4-right: #010101; /**/
   --text-color-5: #F6F6F6;
