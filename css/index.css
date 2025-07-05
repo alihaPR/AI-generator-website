@@ -84,7 +84,9 @@ html {
   justify-content: center;
   gap: 12px;
   margin-top: 125px;
+  
 }
+
 .poster-cards{
   width: 255px;
   height: 330px;
@@ -124,7 +126,7 @@ html {
   
 }
 .poster-text h4 {
-  font-family: 'Bold';
+  font-family: 'Reagular';
   font-size: 16px;
   color: var(--text-color-cart);
 }

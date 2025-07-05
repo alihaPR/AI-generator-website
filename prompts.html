@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,118 +9,114 @@
     <link rel="stylesheet" href="/css/Prompts.css">
 
 </head>
+
 <body>
 
     <!-- header -->
 
     <header class="header">
-                        
-                        <a href="#" class="logo">Dream morph</a>
-                        
-                        <ul class="navbar">
-                            <li class="navbar__item">
-                                <a href="/index.html" class="navbar__link">Home</a>
-                            </li>
-                             <li class="navbar__item dropdown">
-                            <a href="#tools" class="navbar__link">Tools</a>
-        <div class="dropdown-menu">
-                                <div class="dropdown-row"  data-popup="popup1"
-                                        data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
-                                        data-img-before="/image/202505182125312.webp"
-                                        data-img-after="/image/20250518212531.webp"
-                                        onclick="openPopup(this)">
-                                    <img src="/image/20250518212531.webp" alt="Tool 1" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>image Upscaler</h5>
-                                        <p>Quickly enhance and upscale your images in one-click</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
-                                    data-img-before="/image/imggallery2.webp"
-                                    data-img-after="/image/imggallery.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/imggallery2.webp" alt="Tool 2" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Remove backgrounds</h5>
-                                        <p>Easily remove or change your photo background</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
-                                    data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
-                                    data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/1750148089165.webp" alt="Tool 3" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Social Glowr</h5>
-                                        <p>Stylish visuals for modern social media posts</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
-                                    data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
-                                    data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/1750148026856.webp" alt="Tool 4" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Skin Magic</h5>
-                                        <p>Clear, soft, and natural face retouch</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row"class="dropdown-row" data-popup="popup1"
-                                    data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
-                                    data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
-                                    data-img-after="/image/1924164fff129f91b75158eaf944c137.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/1750148194171.webp" alt="Tool 5" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>Product Poster</h5>
-                                        <p>Eye-catching product ads with sharp design</p>
-                                    </div>
-                                </div>
-                                <div class="dropdown-row"class="dropdown-row" data-popup="popup1"
-                                    data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
-                                    data-img-before="/image/photo19483072295.jpg"
-                                    data-img-after="/image/photo19452945200.webp"
-                                    onclick="openPopup(this)">
-                                    <img src="/image/photo19483072295.jpg" alt="Tool 6" class="dropdown-img">
-                                    <div class="dropdown-text">
-                                        <h5>3*4 image</h5>
-                                        <p>Creat picturs from text,with AI</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                            <li class="navbar__item">
-                                <a href="/prompts.html" class="navbar__link">Prompts</a>
-                            </li>
-                        </ul>
 
-                       <div class="navbar__btn">
-                            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#" class="logo">Dream morph</a>
+
+        <ul class="navbar">
+            <li class="navbar__item">
+                <a href="/index.html" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item dropdown">
+                <a href="#tools" class="navbar__link">Tools</a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-row" data-popup="popup1"
+                        data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
+                        data-img-before="/image/202505182125312.webp" data-img-after="/image/20250518212531.webp"
+                        onclick="openPopup(this)">
+                        <img src="/image/20250518212531.webp" alt="Tool 1" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>image Upscaler</h5>
+                            <p>Quickly enhance and upscale your images in one-click</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" data-popup="popup1"
+                        data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
+                        data-img-before="/image/imggallery2.webp" data-img-after="/image/imggallery.webp"
+                        onclick="openPopup(this)">
+                        <img src="/image/imggallery2.webp" alt="Tool 2" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Remove backgrounds</h5>
+                            <p>Easily remove or change your photo background</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
+                        data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
+                        data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp" onclick="openPopup(this)">
+                        <img src="/image/1750148089165.webp" alt="Tool 3" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Social Glowr</h5>
+                            <p>Stylish visuals for modern social media posts</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
+                        data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
+                        data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp" onclick="openPopup(this)">
+                        <img src="/image/1750148026856.webp" alt="Tool 4" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Skin Magic</h5>
+                            <p>Clear, soft, and natural face retouch</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
+                        data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
+                        data-img-after="/image/1924164fff129f91b75158eaf944c137.webp" onclick="openPopup(this)">
+                        <img src="/image/1750148194171.webp" alt="Tool 5" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>Product Poster</h5>
+                            <p>Eye-catching product ads with sharp design</p>
+                        </div>
+                    </div>
+                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                        data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
+                        data-img-before="/image/photo19483072295.jpg" data-img-after="/image/photo19452945200.webp"
+                        onclick="openPopup(this)">
+                        <img src="/image/photo19483072295.jpg" alt="Tool 6" class="dropdown-img">
+                        <div class="dropdown-text">
+                            <h5>3*4 image</h5>
+                            <p>Creat picturs from text,with AI</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="navbar__item">
+                <a href="/prompts.html" class="navbar__link">Prompts</a>
+            </li>
+        </ul>
+
+
+        <div class="navbar__btn">
+            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="white"/>
                             </svg> -->
-                        
-                            <div class="navbar__right-placeholder" >
-                                <!-- جایگزین دکمه‌های قبلی دارک/لایت -->
-                                <div class="theme-toggle">
-                                  <input type="checkbox" class="checkbox" id="theme-checkbox">
-                                  <label for="theme-checkbox" class="checkbox-label">
-                                    <span class="ball"></span>
-                                  </label>
-                                </div>
-                            </div>
-                            
-                        </div>
+
+            <div class="navbar__right-placeholder">
+                <!-- جایگزین دکمه‌های قبلی دارک/لایت -->
+                <div class="theme-toggle">
+                    <input type="checkbox" class="checkbox" id="theme-checkbox">
+                    <label for="theme-checkbox" class="checkbox-label">
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
 
     </header>
- 
+
     <!-- Main -->
 
     <section class="main">
         <div class="main__background">
-          
+
             <div class="background-shapes">
                 <div class="circle__left"></div>
                 <div class="circle__right"></div>
@@ -139,13 +136,11 @@
                                     <h4>Background</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Keep the exact composition, subject placement, and aspect ratio. Only change the visual style. Do not alter layout, proportions, or content. Do not default to square, using the original images aspect ratio is critical and must not be changed."
-                                data-img-before="/image/file_00000000eb3c61f7b9e0d955c96e5b23.webp"
-                                data-img-after="/image/IMG_20250531_100357_052.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Keep the exact composition, subject placement, and aspect ratio. Only change the visual style. Do not alter layout, proportions, or content. Do not default to square, using the original images aspect ratio is critical and must not be changed."
+                                    data-img-before="/image/file_00000000eb3c61f7b9e0d955c96e5b23.webp"
+                                    data-img-after="/image/IMG_20250531_100357_052.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -156,186 +151,166 @@
                                     <h4>Muppet</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Keep the exact composition, subject placement, and aspect ratio. Only change the visual style. Do not alter layout, proportions, or content. Do not default to square, using the original images aspect ratio is critical and must not be changed."
-                                data-img-before="/image/Muppetrealistic.webp"
-                                data-img-after="/image/Muppet realistic.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Keep the exact composition, subject placement, and aspect ratio. Only change the visual style. Do not alter layout, proportions, or content. Do not default to square, using the original images aspect ratio is critical and must not be changed."
+                                    data-img-before="/image/Muppetrealistic.webp"
+                                    data-img-after="/image/Muppet realistic.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
-                        
-                        <div class="poster-cards" >
+
+                        <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Ghibli</h4>
                                     <p>DM</p>
                                 </div>
-                                     <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image in the Ghibli style, painterly anime look, soft watercolor textures, lush natural environments, emotionally expressive characters with large eyes, subtle magical realism, nostalgic atmosphere, warm lighting, gentle brushwork.”"
-                                data-img-before="/image/file_00000000afd061f781207413ae474318.webp"
-                                data-img-after="/image/IMG_4313.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in the Ghibli style, painterly anime look, soft watercolor textures, lush natural environments, emotionally expressive characters with large eyes, subtle magical realism, nostalgic atmosphere, warm lighting, gentle brushwork.”"
+                                    data-img-before="/image/file_00000000afd061f781207413ae474318.webp"
+                                    data-img-after="/image/IMG_4313.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
-                        
-                        <div class="poster-cards" >
+
+                        <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Kintted Toy</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image in the Knitted Toy style, yarn loop textures, fabric stitch detail, soft and droopy limbs, handmade look, safety eyes, thread seams, cozy and cute, home-crafted visual style, warm lighting and fuzzy edges.”"
-                                data-img-before="/image/file_00000000711c61f89cca37a360755bf5.webp"
-                                data-img-after="/image/IMG_4306.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in the Knitted Toy style, yarn loop textures, fabric stitch detail, soft and droopy limbs, handmade look, safety eyes, thread seams, cozy and cute, home-crafted visual style, warm lighting and fuzzy edges.”"
+                                    data-img-before="/image/file_00000000711c61f89cca37a360755bf5.webp"
+                                    data-img-after="/image/IMG_4306.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Marble</h4>
                                     <p>DM</p>
                                 </div>
-                               <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image into a hyper-realistic marble sculpture. All-white polished marble with a glossy finish, reflecting soft ambient light. Emphasize deep shadows and highlights to bring out sculptural depth and realism. Texture should be smooth and finely detailed, resembling polished Carrara marble. Maintain as much original detail as possible, reinterpreted as high-relief marble carving. Fresco-like surface, classical Greco-Roman aesthetic. Dramatic lighting to define contours. Must clearly look like carved stone, not a sketch or drawing. High-resolution, 3D-rendered realism.”"
-                                data-img-before="/image/Marble.webp"
-                                data-img-after="/image/Marble2.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image into a hyper-realistic marble sculpture. All-white polished marble with a glossy finish, reflecting soft ambient light. Emphasize deep shadows and highlights to bring out sculptural depth and realism. Texture should be smooth and finely detailed, resembling polished Carrara marble. Maintain as much original detail as possible, reinterpreted as high-relief marble carving. Fresco-like surface, classical Greco-Roman aesthetic. Dramatic lighting to define contours. Must clearly look like carved stone, not a sketch or drawing. High-resolution, 3D-rendered realism.”"
+                                    data-img-before="/image/Marble.webp" data-img-after="/image/Marble2.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Lego style</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image in the Lego style, made entirely of plastic bricks, blocky shapes, visible stud textures, modular construction, bright primary colors, characters with iconic Lego faces and claw hands, 3D toy-like rendering.”"
-                                data-img-before="/image/legostyle.webp"
-                                data-img-after="/image/lego style.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in the Lego style, made entirely of plastic bricks, blocky shapes, visible stud textures, modular construction, bright primary colors, characters with iconic Lego faces and claw hands, 3D toy-like rendering.”"
+                                    data-img-before="/image/legostyle.webp" data-img-after="/image/lego style.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Rick & Morty</h4>
                                     <p>DM</p>
                                 </div>
-                               <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image in a surreal sci-fi cartoon style. flat 2D with wobbly outlines, exaggerated facial expressions, grotesque humor, absurd proportions, chaotic alien worlds, dimensional portals, and a muted palette lit with electric pops of color.”"
-                                data-img-before="/image/IMG_20250607_014124.webp"
-                                data-img-after="/image/IMG_4307.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in a surreal sci-fi cartoon style. flat 2D with wobbly outlines, exaggerated facial expressions, grotesque humor, absurd proportions, chaotic alien worlds, dimensional portals, and a muted palette lit with electric pops of color.”"
+                                    data-img-before="/image/IMG_20250607_014124.webp"
+                                    data-img-after="/image/IMG_4307.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
-                        
-                        <div class="poster-cards" >
+
+                        <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Doodle Art</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Redo this image in the Doodle art style, playful random sketches, cartoonish exaggeration, hand-drawn aesthetic, overlapping line work, spontaneous composition"
-                                data-img-before="/image/file_000000008bcc61f796169637e121274e.webp"
-                                data-img-after="/image/bd6ce32f72f312c936f16ccf2e2c3e7d.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Redo this image in the Doodle art style, playful random sketches, cartoonish exaggeration, hand-drawn aesthetic, overlapping line work, spontaneous composition"
+                                    data-img-before="/image/file_000000008bcc61f796169637e121274e.webp"
+                                    data-img-after="/image/bd6ce32f72f312c936f16ccf2e2c3e7d.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
 
                         <!-- از اینجا به بعد کارت‌ها مخفی می‌شن -->
-                    
-                        <div class="poster-cards hidden-card" >
+
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Steampunk</h4>
                                     <p>DM</p>
                                 </div>
-                              <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Redo this image in the Steampunk style, Victorian sci-fi aesthetic, brass gears, steam-powered machinery, leather and rivets, mechanical enhancements, sepia tones."
-                                data-img-before="/image/file_000000009e8c61f7b6bf7c08bb604047.webp"
-                                data-img-after="/image/49044a2e80f99ba1c1afb2b9507bb213.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Redo this image in the Steampunk style, Victorian sci-fi aesthetic, brass gears, steam-powered machinery, leather and rivets, mechanical enhancements, sepia tones."
+                                    data-img-before="/image/file_000000009e8c61f7b6bf7c08bb604047.webp"
+                                    data-img-after="/image/49044a2e80f99ba1c1afb2b9507bb213.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Surrealism</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Redo this image in the Surrealism style, dreamlike distortion, melting shapes, floating objects, unexpected combinations, Dalí-inspired forms, symbolic and irrational visuals."
-                                data-img-before="/image/file_0000000038d061f88565577aa27356bc.webp"
-                                data-img-after="/image/IMG_4299.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Redo this image in the Surrealism style, dreamlike distortion, melting shapes, floating objects, unexpected combinations, Dalí-inspired forms, symbolic and irrational visuals."
+                                    data-img-before="/image/file_0000000038d061f88565577aa27356bc.webp"
+                                    data-img-after="/image/IMG_4299.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Threadow</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Delicate hand embroidery illustration on linen fabric, showing [SUBJECT], soft earthy tones, visible threads and stitching texture, subtle shading, peaceful and minimalist countryside atmosphere, natural element included, finely detailed embroidery art, textile aesthetic"
-                                data-img-before="/image/IMG_4321.webp"
-                                data-img-after="/image/IMG_4199.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Delicate hand embroidery illustration on linen fabric, showing [SUBJECT], soft earthy tones, visible threads and stitching texture, subtle shading, peaceful and minimalist countryside atmosphere, natural element included, finely detailed embroidery art, textile aesthetic"
+                                    data-img-before="/image/IMG_4321.webp" data-img-after="/image/IMG_4199.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Picasso</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image into a bold, abstract modernist painting characterized by vivid, contrasting colors, wildly expressive facial distortions, fractured anatomy, and a playful, surreal interpretation of form. Use exaggerated geometric shapes and overlapping perspectives to depict figures and objects from multiple viewpoints at once. Faces should be broken into sharp planes, with asymmetrical eyes, twisted features, and emotionally charged expressions. Flatten depth, simplify volumes, and let imagination override realism, embracing the radical spontaneity and avant-garde experimentation of early 20th-century European modernism.”"
-                                data-img-before="/image/file_000000008f0861f7b59b3c9011c4e0c9.webp"
-                                data-img-after="/image/IMG_4306.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image into a bold, abstract modernist painting characterized by vivid, contrasting colors, wildly expressive facial distortions, fractured anatomy, and a playful, surreal interpretation of form. Use exaggerated geometric shapes and overlapping perspectives to depict figures and objects from multiple viewpoints at once. Faces should be broken into sharp planes, with asymmetrical eyes, twisted features, and emotionally charged expressions. Flatten depth, simplify volumes, and let imagination override realism, embracing the radical spontaneity and avant-garde experimentation of early 20th-century European modernism.”"
+                                    data-img-before="/image/file_000000008f0861f7b59b3c9011c4e0c9.webp"
+                                    data-img-after="/image/IMG_4306.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -346,47 +321,41 @@
                                     <h4>Caricub</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Hyperrealistic baby [subject] in a caricature style, with exaggerated facial features, finely detailed skin texture, meticulously styled hair, cinematic lighting, vibrant color grading, dynamic shadows and highlights, whimsical atmosphere, rendered with photo-real depth and rich composition"
-                                data-img-before="/image/IMG_4324.webp"
-                                data-img-after="/image/IMG_4308.webp"
-                                onclick="openPopup(this)">
-                                Get start
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="poster-cards hidden-card" >
-                            <div class="poster-card__content">
-                                <div class="poster-text">
-                                    <h4>Tiny Twin</h4>
-                                    <p>DM</p>
-                                </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Create an imaginative and heartwarming scene where the uploaded person appears holding a small finger puppet on their index finger. The puppet should resemble the same person but in a miniature, simplified form. If the person in the photo is a child, make sure the scene is child-safe, gentle, and friendly — no exaggerated features, no scary expressions, and soft colors. If the person is an adult, use a more fun and playful tone, slightly more contrast, and expressive features for the puppet"
-                                data-img-before="/image/IMG_4195.webp"
-                                data-img-after="/image/IMG_4194.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Hyperrealistic baby [subject] in a caricature style, with exaggerated facial features, finely detailed skin texture, meticulously styled hair, cinematic lighting, vibrant color grading, dynamic shadows and highlights, whimsical atmosphere, rendered with photo-real depth and rich composition"
+                                    data-img-before="/image/IMG_4324.webp" data-img-after="/image/IMG_4308.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
                         <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
-                                <div class="poster-text">                                   
+                                <div class="poster-text">
+                                    <h4>Tiny Twin</h4>
+                                    <p>DM</p>
+                                </div>
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Create an imaginative and heartwarming scene where the uploaded person appears holding a small finger puppet on their index finger. The puppet should resemble the same person but in a miniature, simplified form. If the person in the photo is a child, make sure the scene is child-safe, gentle, and friendly — no exaggerated features, no scary expressions, and soft colors. If the person is an adult, use a more fun and playful tone, slightly more contrast, and expressive features for the puppet"
+                                    data-img-before="/image/IMG_4195.webp" data-img-after="/image/IMG_4194.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="poster-cards hidden-card">
+                            <div class="poster-card__content">
+                                <div class="poster-text">
                                     <h4>Motion Fade</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="[liminal fashion still], [profile-glitch portrait], GlitchSoul: motion trails and quiet stares. Film Stock: Kodak Vision3 500T + digital motion echo overlay."
-                                data-img-before="/image/IMG_4328.webp"
-                                data-img-after="/image/IMG_4304.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="[liminal fashion still], [profile-glitch portrait], GlitchSoul: motion trails and quiet stares. Film Stock: Kodak Vision3 500T + digital motion echo overlay."
+                                    data-img-before="/image/IMG_4328.webp" data-img-after="/image/IMG_4304.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -397,43 +366,37 @@
                                     <h4>Background</h4>
                                     <p>DM</p>
                                 </div>
-                               <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="“Redo this image in a surreal sci-fi cartoon style. flat 2D with wobbly outlines, exaggerated facial expressions, grotesque humor, absurd proportions, chaotic alien worlds, dimensional portals, and a muted palette lit with electric pops of color.”"
-                                data-img-before="/image/IMG_20250615_092557_457.webp"
-                                data-img-after="/image/IMG_20250615_092602_712.webp"
-                                onclick="openPopup(this)">
-                                Get start
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="poster-cards hidden-card" >
-                            <div class="poster-card__content">
-                                <div class="poster-text">                                   
-                                    <h4>ِDisney</h4>
-                                    <p>DM</p>
-                                </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Redo this image in a mid-century fairytale animation style, 2D cel animation with big expressive eyes, soft hand-painted backgrounds, gentle color gradients, magical lighting, graceful character poses, and a nostalgic storybook tone inspired by the golden age of animated films."
-                                data-img-before="/image/disneyclassic.webp"
-                                data-img-after="/image/disneyclassic1.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="“Redo this image in a surreal sci-fi cartoon style. flat 2D with wobbly outlines, exaggerated facial expressions, grotesque humor, absurd proportions, chaotic alien worlds, dimensional portals, and a muted palette lit with electric pops of color.”"
+                                    data-img-before="/image/IMG_20250615_092557_457.webp"
+                                    data-img-after="/image/IMG_20250615_092602_712.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
+                            <div class="poster-card__content">
+                                <div class="poster-text">
+                                    <h4>ِDisney</h4>
+                                    <p>DM</p>
+                                </div>
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Redo this image in a mid-century fairytale animation style, 2D cel animation with big expressive eyes, soft hand-painted backgrounds, gentle color gradients, magical lighting, graceful character poses, and a nostalgic storybook tone inspired by the golden age of animated films."
+                                    data-img-before="/image/disneyclassic.webp"
+                                    data-img-after="/image/disneyclassic1.webp" onclick="openPopup(this)">
+                                    Get start
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>MiniGlow</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt='{
+                                <a href="#" class="poster-card__btn" data-popup="popup1" data-prompt='{
                                     "transformation_parameters": {
                                       "color_palette": {
                                         "primary": "#FF80AB",
@@ -499,25 +462,21 @@
                                       "face_detection_priority": true,
                                       "maintain_group_dynamics": true
                                     }
-                                    }'
-                                data-img-before="/image/IMG_20250615_092602_746.webp"
-                                data-img-after="/image/IMG_20250615_092602_712.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                    }' data-img-before="/image/IMG_20250615_092602_746.webp"
+                                    data-img-after="/image/IMG_20250615_092602_712.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>colorful</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt='{
+                                <a href="#" class="poster-card__btn" data-popup="popup1" data-prompt='{
 "prompt": "Transform the uploaded photo into psychedelic art with vibrant, swirling colors and trippy patterns reminiscent of 1960s concert posters. Apply kaleidoscopic effects, fluid color distortions, and fractal patterns. Include saturated rainbow gradients, melting visuals, and hypnotic symmetrical designs. Incorporate mandala-like elements and optical illusions. Style should evoke works by Peter Max, Victor Moscoso, and classic Fillmore posters while maintaining some recognizable elements from the original image.",
 "negative_prompt": "monochrome, muted colors, realistic photography, clean lines, minimalist design, corporate aesthetic, dark tones, horror elements, subtle effects",
 "parameters": {
@@ -545,28 +504,24 @@
 "reference_image": "user_uploaded_photo",
 "output_format": "png",
 "style_reference": "1960s_psychedelic_posters"
-}'
-                                data-img-before="/image/IMG_20250615_092916_931.webp"
-                                data-img-after="/image/IMG_20250615_092917_350.webp"
-                                onclick="openPopup(this)">
-                                Get start
+}' data-img-before="/image/IMG_20250615_092916_931.webp" data-img-after="/image/IMG_20250615_092917_350.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Paper style</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Create a high-resolution 3D render of a character designed entirely in the style of origami. The figure should appear as if it is folded from a single sheet of textured paper, with visible creases, edges, and angular folds. Use a muted, natural color palette (like soft whites, browns, and light blues) to enhance the paper-like aesthetic. The environment around the figure should also follow the origami theme — trees, animals, or objects folded in geometric precision. Lighting should be soft and directional to cast subtle shadows that emphasize the folds and structure. The overall mood should be calm, elegant, and minimalistic."
-                                data-img-before="/image/IMG_20250615_092531_548.webp"
-                                data-img-after="/image/IMG_20250615_092531_134.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Create a high-resolution 3D render of a character designed entirely in the style of origami. The figure should appear as if it is folded from a single sheet of textured paper, with visible creases, edges, and angular folds. Use a muted, natural color palette (like soft whites, browns, and light blues) to enhance the paper-like aesthetic. The environment around the figure should also follow the origami theme — trees, animals, or objects folded in geometric precision. Lighting should be soft and directional to cast subtle shadows that emphasize the folds and structure. The overall mood should be calm, elegant, and minimalistic."
+                                    data-img-before="/image/IMG_20250615_092531_548.webp"
+                                    data-img-after="/image/IMG_20250615_092531_134.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -577,9 +532,7 @@
                                     <h4>SoftSculpt</h4>
                                     <p>DM</p>
                                 </div>
-                                  <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt='{
+                                <a href="#" class="poster-card__btn" data-popup="popup1" data-prompt='{
 "task": "image_transformation",
   "output_type": "collectible_toy_figure",
   "style": {
@@ -602,12 +555,10 @@
     "Ensure gender presentation remains clear and consistent with original"
   ]
 }
-'
-                                data-prompt='{ "renderType": "3D", "resolution": "high", "baseReference": "attachedImage", "style": { "concept": "inflatable", "appearance": { "texture": "smooth matte", "details": ["fabric creases", "stitching"], "form": "slightly irregular and squishy" } }, "materials": { "primary": "inflatable fabric", "properties": { "finish": "matte", "reflectivity": "low", "translucency": "none" } }, "lighting": { "type": "soft", "purpose": "highlight volume and realism", "shadows": "gentle" }, "background": { "style": "minimal", "color": "light gray", "gradient": false }, "colorMatching": { "accuracy": "exact", "source": "attached image" }, "detailPreservation": { "level": "complete", "description": "match all details from attached image" }, "aestheticDirection": { "primary": "playful", "secondary": "sculptural" }, "additionalNotes": "The object should appear soft, rounded, and air-filled — like a plush balloon or blow-up toy." }'
-                                data-img-before="/image/IMG_20250615_092550_644.webp"
-                                data-img-after="/image/IMG_20250615_092550_823.webp"
-                                onclick="openPopup(this)">
-                                Get start
+' data-prompt='{ "renderType": "3D", "resolution": "high", "baseReference": "attachedImage", "style": { "concept": "inflatable", "appearance": { "texture": "smooth matte", "details": ["fabric creases", "stitching"], "form": "slightly irregular and squishy" } }, "materials": { "primary": "inflatable fabric", "properties": { "finish": "matte", "reflectivity": "low", "translucency": "none" } }, "lighting": { "type": "soft", "purpose": "highlight volume and realism", "shadows": "gentle" }, "background": { "style": "minimal", "color": "light gray", "gradient": false }, "colorMatching": { "accuracy": "exact", "source": "attached image" }, "detailPreservation": { "level": "complete", "description": "match all details from attached image" }, "aestheticDirection": { "primary": "playful", "secondary": "sculptural" }, "additionalNotes": "The object should appear soft, rounded, and air-filled — like a plush balloon or blow-up toy." }'
+                                    data-img-before="/image/IMG_20250615_092550_644.webp"
+                                    data-img-after="/image/IMG_20250615_092550_823.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -618,47 +569,41 @@
                                     <h4>PlushForm</h4>
                                     <p>DM</p>
                                 </div>
-                                  <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt='{ "renderType": "3D", "resolution": "high", "baseReference": "attachedImage", "style": { "concept": "inflatable", "appearance": { "texture": "smooth matte", "details": ["fabric creases", "stitching"], "form": "slightly irregular and squishy" } }, "materials": { "primary": "inflatable fabric", "properties": { "finish": "matte", "reflectivity": "low", "translucency": "none" } }, "lighting": { "type": "soft", "purpose": "highlight volume and realism", "shadows": "gentle" }, "background": { "style": "minimal", "color": "light gray", "gradient": false }, "colorMatching": { "accuracy": "exact", "source": "attached image" }, "detailPreservation": { "level": "complete", "description": "match all details from attached image" }, "aestheticDirection": { "primary": "playful", "secondary": "sculptural" }, "additionalNotes": "The object should appear soft, rounded, and air-filled — like a plush balloon or blow-up toy." }'
-                                data-img-before="/image/IMG_20250615_092544_191.webp"
-                                data-img-after="/image/IMG_20250615_092550_823.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt='{ "renderType": "3D", "resolution": "high", "baseReference": "attachedImage", "style": { "concept": "inflatable", "appearance": { "texture": "smooth matte", "details": ["fabric creases", "stitching"], "form": "slightly irregular and squishy" } }, "materials": { "primary": "inflatable fabric", "properties": { "finish": "matte", "reflectivity": "low", "translucency": "none" } }, "lighting": { "type": "soft", "purpose": "highlight volume and realism", "shadows": "gentle" }, "background": { "style": "minimal", "color": "light gray", "gradient": false }, "colorMatching": { "accuracy": "exact", "source": "attached image" }, "detailPreservation": { "level": "complete", "description": "match all details from attached image" }, "aestheticDirection": { "primary": "playful", "secondary": "sculptural" }, "additionalNotes": "The object should appear soft, rounded, and air-filled — like a plush balloon or blow-up toy." }'
+                                    data-img-before="/image/IMG_20250615_092544_191.webp"
+                                    data-img-after="/image/IMG_20250615_092550_823.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Inflasculpt</h4>
                                     <p>DM</p>
                                 </div>
-                                   <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt='{ "renderType": "3D", "resolution": "high", "baseReference": "attachedImage", "style": { "concept": "inflatable", "appearance": { "texture": "smooth matte", "details": ["fabric creases", "stitching"], "form": "slightly irregular and squishy" } }, "materials": { "primary": "inflatable fabric", "properties": { "finish": "matte", "reflectivity": "low", "translucency": "none" } }, "lighting": { "type": "soft", "purpose": "highlight volume and realism", "shadows": "gentle" }, "background": { "style": "minimal", "color": "light gray", "gradient": false }, "colorMatching": { "accuracy": "exact", "source": "attached image" }, "detailPreservation": { "level": "complete", "description": "match all details from attached image" }, "aestheticDirection": { "primary": "playful", "secondary": "sculptural" }, "additionalNotes": "The object should appear soft, rounded, and air-filled — like a plush balloon or blow-up toy." }'
-                                data-img-before="/image/IMG_20250615_092536_731.webp"
-                                data-img-after="/image/IMG_20250615_092550_823.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt='{ "renderType": "3D", "resolution": "high", "baseReference": "attachedImage", "style": { "concept": "inflatable", "appearance": { "texture": "smooth matte", "details": ["fabric creases", "stitching"], "form": "slightly irregular and squishy" } }, "materials": { "primary": "inflatable fabric", "properties": { "finish": "matte", "reflectivity": "low", "translucency": "none" } }, "lighting": { "type": "soft", "purpose": "highlight volume and realism", "shadows": "gentle" }, "background": { "style": "minimal", "color": "light gray", "gradient": false }, "colorMatching": { "accuracy": "exact", "source": "attached image" }, "detailPreservation": { "level": "complete", "description": "match all details from attached image" }, "aestheticDirection": { "primary": "playful", "secondary": "sculptural" }, "additionalNotes": "The object should appear soft, rounded, and air-filled — like a plush balloon or blow-up toy." }'
+                                    data-img-before="/image/IMG_20250615_092536_731.webp"
+                                    data-img-after="/image/IMG_20250615_092550_823.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Bubble</h4>
                                     <p>DM</p>
                                 </div>
-                                   <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="A surreal portrait of a cheerful young woman in a whimsical world entirely made of bubble wrap. Her face, lips, and oversized cat-eye glasses are stylized with translucent bubble textures. She is making a playful kissy face, with exaggerated round lips. Her outfit appears as glossy bubble wrap in bright orange. The background is soft and minimal, composed of bubble wrap trees and abstract shapes. Soft lighting, tactile detail, dreamy and toy-like atmosphere."
-                                data-img-before="/image/photo19452947249.webp"
-                                data-img-after="/image/photo19452945915.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="A surreal portrait of a cheerful young woman in a whimsical world entirely made of bubble wrap. Her face, lips, and oversized cat-eye glasses are stylized with translucent bubble textures. She is making a playful kissy face, with exaggerated round lips. Her outfit appears as glossy bubble wrap in bright orange. The background is soft and minimal, composed of bubble wrap trees and abstract shapes. Soft lighting, tactile detail, dreamy and toy-like atmosphere."
+                                    data-img-before="/image/photo19452947249.webp"
+                                    data-img-after="/image/photo19452945915.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -669,30 +614,26 @@
                                     <h4>Wodcut</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="An old-fashioned woodcut-style black-and-white illustration, with thick engraved lines, heavy contrast, and crosshatching. Medieval or folklore subject, printed on aged paper."
-                                data-img-before="/image/photo19452958925.webp"
-                                data-img-after="/image/photo19452945470.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="An old-fashioned woodcut-style black-and-white illustration, with thick engraved lines, heavy contrast, and crosshatching. Medieval or folklore subject, printed on aged paper."
+                                    data-img-before="/image/photo19452958925.webp"
+                                    data-img-after="/image/photo19452945470.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Machelangelo</h4>
                                     <p>DM</p>
                                 </div>
-                                 <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="A detailed 3D character sculpted in the style of Michelangelo, with dramatic lighting, highly realistic anatomy, and marble texture. Classical Renaissance statue look, soft shadows, museum background."
-                                data-img-before="/image/photo19452960004.webp"
-                                data-img-after="/image/photo19452945200.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="A detailed 3D character sculpted in the style of Michelangelo, with dramatic lighting, highly realistic anatomy, and marble texture. Classical Renaissance statue look, soft shadows, museum background."
+                                    data-img-before="/image/photo19452960004.webp"
+                                    data-img-after="/image/photo19452945200.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -703,30 +644,26 @@
                                     <h4>Mystic Knight</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="A fantasy portrait of a heroic young man with a curled mustache and sharp hairstyle, resembling a noble warrior or enchanted knight. He wears medieval-inspired leather armor with ornate metallic detailing, a dark cloak flowing behind him, and a magical amulet glowing at his chest. Background features a mystical mountain range or castle ruins under a twilight sky, with glowing particles and soft ethereal light. His gaze is intense and proud. Highly detailed, cinematic lighting, fantasy concept art, 4K resolution, majestic atmosphere."
-                                data-img-before="/image/photo19452960895.webp"
-                                data-img-after="/image/photo19452961436.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="A fantasy portrait of a heroic young man with a curled mustache and sharp hairstyle, resembling a noble warrior or enchanted knight. He wears medieval-inspired leather armor with ornate metallic detailing, a dark cloak flowing behind him, and a magical amulet glowing at his chest. Background features a mystical mountain range or castle ruins under a twilight sky, with glowing particles and soft ethereal light. His gaze is intense and proud. Highly detailed, cinematic lighting, fantasy concept art, 4K resolution, majestic atmosphere."
+                                    data-img-before="/image/photo19452960895.webp"
+                                    data-img-after="/image/photo19452961436.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>dark style</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Create a high-end black and white portrait using my selfie. The face must remain exactly as in on my original selfie - no editing, no retouching, no smoothing. I'm wearing the business suits. Preserve every facial detail and texture for a raw, authentic look. The lighting should be dramatic and studio-quality, using strong contrast and shadows to sculpt the features.Use a clean, blurred studio-style background with soft gradients or subtle texture to enhance focus on the subject.Frame the portrait vertically (9:16 format), centered composition, with ultra-realistic skin texture and depth. No digital makeup or alterations. The final result should look timeless, editorial, and emotionally powerful - suitable for a gallery or fashion magazine."
-                                data-img-before="/image/photo19453123364.webp"
-                                data-img-after="/image/photo19453122405.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Create a high-end black and white portrait using my selfie. The face must remain exactly as in on my original selfie - no editing, no retouching, no smoothing. I'm wearing the business suits. Preserve every facial detail and texture for a raw, authentic look. The lighting should be dramatic and studio-quality, using strong contrast and shadows to sculpt the features.Use a clean, blurred studio-style background with soft gradients or subtle texture to enhance focus on the subject.Frame the portrait vertically (9:16 format), centered composition, with ultra-realistic skin texture and depth. No digital makeup or alterations. The final result should look timeless, editorial, and emotionally powerful - suitable for a gallery or fashion magazine."
+                                    data-img-before="/image/photo19453123364.webp"
+                                    data-img-after="/image/photo19453122405.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
@@ -737,80 +674,72 @@
                                     <h4>subway</h4>
                                     <p>DM</p>
                                 </div>
-                               <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Profile shot of me walking through a rushing metro station crowd. Everyone else is motion-blurred with trailing effects, while I remain in sharp focus with a serious expression, wearing a long trench coat. Cool blue tones dominate the scene, evoking a 35mm film aesthetic. Ambient lighting comes from train signs and station fixtures. Ratio: Portrait 4:3"
-                                data-img-before="/image/photo19453122129.webp"
-                                data-img-after="/image/photo19453121836.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Profile shot of me walking through a rushing metro station crowd. Everyone else is motion-blurred with trailing effects, while I remain in sharp focus with a serious expression, wearing a long trench coat. Cool blue tones dominate the scene, evoking a 35mm film aesthetic. Ambient lighting comes from train signs and station fixtures. Ratio: Portrait 4:3"
+                                    data-img-before="/image/photo19453122129.webp"
+                                    data-img-after="/image/photo19453121836.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Ronaldo</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="INC Ultra-realistic vertical selfie. A young man (use uploaded face) and Cristiano Ronaldo, both wearing 2025 Portugal jerseys. The young man is clicking the selfie, Ronaldo holds the UEFA Nations League 2025 trophy. Background: packed stadium, confetti, stadium lights, victory vibe. Apply fisheye wide-angle selfie effect. Maintain accurate faces, skin textures, lighting, and cinematic realism. Trophy clearly in Ronaldo's hands, no overlap behind heads."
-                                data-img-before="/image/photo19453123736.webp"
-                                data-img-after="/image/photo19453122791.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="INC Ultra-realistic vertical selfie. A young man (use uploaded face) and Cristiano Ronaldo, both wearing 2025 Portugal jerseys. The young man is clicking the selfie, Ronaldo holds the UEFA Nations League 2025 trophy. Background: packed stadium, confetti, stadium lights, victory vibe. Apply fisheye wide-angle selfie effect. Maintain accurate faces, skin textures, lighting, and cinematic realism. Trophy clearly in Ronaldo's hands, no overlap behind heads."
+                                    data-img-before="/image/photo19453123736.webp"
+                                    data-img-after="/image/photo19453122791.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>atelier</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Prompt - white portrait of a confident looking man. sitting on a wooden stool 5,362 against a dark studio background. He is wearing a well-fitted, all-black suit with a black shirt, and black pant small silver chain at naki and small silver watch slightly unbuttoned at the top, exuding a moody and powerful aura. His posture is relaxed yet dominant, with one arm resting on his leg and the other one in his pant pocket The lighting is soft but directional creating"
-                                data-img-before="/image/photo19453122591.webp"
-                                data-img-after="/image/photo19453122405.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Prompt - white portrait of a confident looking man. sitting on a wooden stool 5,362 against a dark studio background. He is wearing a well-fitted, all-black suit with a black shirt, and black pant small silver chain at naki and small silver watch slightly unbuttoned at the top, exuding a moody and powerful aura. His posture is relaxed yet dominant, with one arm resting on his leg and the other one in his pant pocket The lighting is soft but directional creating"
+                                    data-img-before="/image/photo19453122591.webp"
+                                    data-img-after="/image/photo19453122405.webp" onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        <div class="poster-cards hidden-card" >
+                        <div class="poster-cards hidden-card">
                             <div class="poster-card__content">
                                 <div class="poster-text">
                                     <h4>Chaos</h4>
                                     <p>DM</p>
                                 </div>
-                                <a href="#" class="poster-card__btn"
-                                data-popup="popup1"
-                                data-prompt="Backlit portrait of me under anoverpass at twilight, city lights trailing around me in long exposure streaks. I'm in perfect sharpness, dressed in a leather jacket with hands in pockets. A sense of isolation and focus dominates the frame, with deep shadows and a soft cinematic bloom to the light sources."
-                                data-img-before="/image/photo19453123966.webp"
-                                data-img-after="/image/IMG_4571.webp"
-                                onclick="openPopup(this)">
-                                Get start
+                                <a href="#" class="poster-card__btn" data-popup="popup1"
+                                    data-prompt="Backlit portrait of me under anoverpass at twilight, city lights trailing around me in long exposure streaks. I'm in perfect sharpness, dressed in a leather jacket with hands in pockets. A sense of isolation and focus dominates the frame, with deep shadows and a soft cinematic bloom to the light sources."
+                                    data-img-before="/image/photo19453123966.webp" data-img-after="/image/IMG_4571.webp"
+                                    onclick="openPopup(this)">
+                                    Get start
                                 </a>
                             </div>
                         </div>
 
-                        
+
                     </div>
-                    
+
                     <a href="#" class="poster-btn__btn" id="seeMoreBtn">See More</a>
                 </section>
-            
+
             </div>
 
         </div>
-        
+
     </section>
-    
+
     <!-- Popup -->
 
     <div class="popup" id="popup1">
@@ -819,47 +748,55 @@
 
             <div class="popup-content-left">
 
-              <h4>How to use the prompt</h4>
+                <h4>How to use the prompt</h4>
 
-              <ul class="popup-menu">
-                <li class="popup-menu-item">
-                    Open <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
-                </li>
-                <li class="popup-menu-item">
-                    Select + And Select Your photo
-                </li>
-                <li class="popup-menu-item">
-                    Copy The Command Below And Paste It Into <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
-                </li>
-              </ul>
+                <ul class="popup-menu">
+                    <li class="popup-menu-item">
+                        Open <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
+                    </li>
+                    <li class="popup-menu-item">
+                        Select + And Select Your photo
+                    </li>
+                    <li class="popup-menu-item">
+                        Copy The Command Below And Paste It Into <a href="https://chat.openai.com/"
+                            target="_blank">ChatGpt</a> Ai
+                    </li>
+                </ul>
+                <!-- <p class="popup-vocher">Chat GPT does not generate more than 3 photos per day, you can purchase a Chat
+                    GPT subscription from <a href="#">this website</a>
+                </p> -->
 
-            <div class="popup-box">
-              <span id="promptText">Prompt اینجا قرار می‌گیره</span>
-              <svg class="copy-btn" onclick="copyPrompt()" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.6665 20H5.33317C4.62593 20 3.94765 19.7191 3.44755 19.219C2.94746 18.7189 2.6665 18.0406 2.6665 17.3334V5.33335C2.6665 4.62611 2.94746 3.94783 3.44755 3.44774C3.94765 2.94764 4.62593 2.66669 5.33317 2.66669H17.3332C18.0404 2.66669 18.7187 2.94764 19.2188 3.44774C19.7189 3.94783 19.9998 4.62611 19.9998 5.33335V6.66669M14.6665 12H26.6665C28.1393 12 29.3332 13.1939 29.3332 14.6667V26.6667C29.3332 28.1394 28.1393 29.3334 26.6665 29.3334H14.6665C13.1937 29.3334 11.9998 28.1394 11.9998 26.6667V14.6667C11.9998 13.1939 13.1937 12 14.6665 12Z"
-                 stroke-width="2" />
-              </svg>
+                <div class="popup-box">
+                    <span id="promptText">Prompt اینجا قرار می‌گیره</span>
+                    <svg class="copy-btn" onclick="copyPrompt()" width="24" height="24" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.6665 20H5.33317C4.62593 20 3.94765 19.7191 3.44755 19.219C2.94746 18.7189 2.6665 18.0406 2.6665 17.3334V5.33335C2.6665 4.62611 2.94746 3.94783 3.44755 3.44774C3.94765 2.94764 4.62593 2.66669 5.33317 2.66669H17.3332C18.0404 2.66669 18.7187 2.94764 19.2188 3.44774C19.7189 3.94783 19.9998 4.62611 19.9998 5.33335V6.66669M14.6665 12H26.6665C28.1393 12 29.3332 13.1939 29.3332 14.6667V26.6667C29.3332 28.1394 28.1393 29.3334 26.6665 29.3334H14.6665C13.1937 29.3334 11.9998 28.1394 11.9998 26.6667V14.6667C11.9998 13.1939 13.1937 12 14.6665 12Z"
+                            stroke-width="2" />
+                    </svg>
+                </div>
+
+
             </div>
-
-
-            </div>
-             <div class="popup-content-right">
+            <div class="popup-content-right">
                 <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
                 <div class="container-img-prompts">
-                   <img id="popupImageBefore" class="before" src="" alt="">
-                 <img id="popupImageAfter" class="after" src="" alt="">
-                 <div class="popup-slider"></div>
+                    <img id="popupImageBefore" class="before" src="" alt="">
+                    <img id="popupImageAfter" class="after" src="" alt="">
+                    <div class="popup-slider"></div>
                 </div>
 
             </div>
 
         </div>
     </div>
-    <div id="copy-notification" style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
+    <div id="copy-notification"
+        style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
         prompt copied to clipboard!
     </div>
 
     <script src="./script/script.js"></script>
     <script src="/script/theme.js"></script>
 </body>
+
 </html>

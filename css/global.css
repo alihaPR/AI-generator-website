@@ -1,7 +1,5 @@
 /* ---------------------------------------------------------- color -------------------------------------------------------------*/
-html {
-  scroll-behavior: smooth;
-}
+
 
 :root{
 
@@ -15,6 +13,7 @@ html {
   --bg-color-tools: #ffffff; /* tools popup */
   --bg-color-popup: #ffffff; /* popup */
   --bg-color-popup-box: #f5f5f5; /* popup box */
+  --bg-color-close:#FFFFFF;
 
 
   
@@ -66,7 +65,7 @@ html {
   --bg-color-tools: #030303; /* tools popup */
   --bg-color-popup: #151515; /* popup */
   --bg-color-popup-box: #0b0b0b; /* popup box */
-
+  --bg-color-close:#151515;
 
   --bg-blur-1: rgba(24, 24, 24, 0.1); 
   --bg-blur-2: rgba(24, 24, 24, 0.95); 
@@ -433,6 +432,7 @@ html {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  
 }
 
 
@@ -451,6 +451,11 @@ html {
   position: relative;
   display: flex;
   gap: 30px;
+/*   
+  transform: translateY(40px) scale(0.95) rotateX(30deg);
+ 
+  animation: popupVocherFancyIn 0.8s cubic-bezier(.22,1,.36,1) forwards; */
+
 }
 
 
@@ -458,6 +463,7 @@ html {
   width: 45%;
   margin-left: 10px;
   margin-top: 35px;
+ 
 }
 .popup-content-left h4{
   font-family: 'Bold';
@@ -476,6 +482,8 @@ html {
   margin-left: 10px;
   font-family: 'Light';
   font-size: 17px;
+  
+  
 }
 .popup-menu-item a {
   color: var(--text-color-8);
@@ -489,6 +497,8 @@ html {
   height: 90px;
   border-radius: 15px;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.40));
+  
+
 }
 .popup-content-left{
   color: var(--text-color-1);
@@ -506,8 +516,8 @@ html {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 1.5); 
+  color: var(--text-color-1);
+  background-color: var(--bg-color-close); 
   backdrop-filter: blur(15px);
   width: 28px;
   height: 28px;
@@ -516,6 +526,43 @@ html {
   border-radius: 7px;
   z-index: 3;
 }
+/* .popup-vocher {
+  font-family: "Reagular";
+  font-size: 11px;
+  width: 350px;
+  margin-top: 65px;
+  margin-left: 5px;
+  opacity: 0;
+
+  transform: translateY(40px) scale(0.95) rotateX(30deg);
+  filter: blur(8px);
+  animation: popupVocherFancyIn 0.8s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+@keyframes popupVocherFancyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95) rotateX(30deg);
+    filter: blur(8px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.03) rotateX(-8deg);
+    filter: blur(1.5px);
+  }
+  80% {
+    transform: translateY(2px) scale(0.98) rotateX(2deg);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+    filter: blur(0);
+  }
+}
+.popup-vocher,a{
+  text-decoration: none;
+} */
 
 /* ------------------------------------------------------- container-img-prompts ------------------------------------------------------- */
 
@@ -658,6 +705,7 @@ html {
   visibility: hidden;
   transition: all 0.3s ease;
   z-index: 999;
+  
 }
 
 /* زمانی که هاور می‌کنی */
