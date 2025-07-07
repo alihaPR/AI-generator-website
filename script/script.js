@@ -200,3 +200,19 @@ function openPopup(el) {
     if (slider.tagName === 'INPUT') slider.value = 50; // اگر اسلایدر input هست
   }
 }
+
+// --------------------------------------------------------------------------------------
+
+window.addEventListener("load", function () {
+  AOS.refresh(); // اضافه کن
+  AOS.init({
+    once: false,
+    duration: 1000
+  });
+});
+
+window.addEventListener('resize', () => {
+  AOS.refresh();
+});
+
+// --------------------------------------------------------------------------------------

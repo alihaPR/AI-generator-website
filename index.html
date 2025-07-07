@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream morph</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="shortcut icon" href="image/" type="favicon.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -16,18 +21,18 @@
 
     <header class="header">
 
-        <a href="#" class="logo">Dream morph</a>
+        <a href="#" class="logo" data-aos="fade-up" data-aos-delay="200">Dream morph</a>
 
         <ul class="navbar">
             <li class="navbar__item">
-                <a href="/index.html" class="navbar__link">Home</a>
+                <a href="/index.html" class="navbar__link" data-aos="fade-up" data-aos-delay="300">Home</a>
             </li>
             <li class="navbar__item">
-                <a href="#gallery" class="navbar__link">Gallery</a>
+                <a href="#gallery" class="navbar__link" data-aos="fade-up" data-aos-delay="350">Gallery</a>
             </li>
 
             <li class="navbar__item dropdown">
-                <a href="#tools" class="navbar__link">Tools</a>
+                <a href="#tools" class="navbar__link" data-aos="fade-up" data-aos-delay="400">Tools</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
@@ -93,7 +98,7 @@
             </li>
 
             <li class="navbar__item">
-                <a href="/prompts.html" class="navbar__link">Prompts</a>
+                <a href="/prompts.html" class="navbar__link" data-aos="fade-up" data-aos-delay="450">Prompts</a>
             </li>
         </ul>
 
@@ -104,7 +109,7 @@
                             </svg> -->
 
             <!-- ...dark mood  btn... -->
-            <div class="navbar__right-placeholder">
+            <div class="navbar__right-placeholder" data-aos="fade-up" data-aos-delay="500">
                 <div class="theme-toggle">
                     <input type="checkbox" class="checkbox" id="theme-checkbox">
                     <label for="theme-checkbox" class="checkbox-label">
@@ -121,7 +126,7 @@
                                 <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
                                 <line x1="1" y1="12" x2="3" y2="12" />
                                 <line x1="21" y1="12" x2="23" y2="12" />
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /> 
                                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                             </g>
                         </svg>
@@ -151,15 +156,15 @@
 
                 <section class="home" id="home">
                     <div class="Home-content">
-                        <h1 class="Home-title">Studio Open Ai Image Generator</h1>
-                        <p class="Home-cption">Find the promt for ChatGPT with one click</p>
+                        <h1 class="Home-title" data-aos="fade-up" data-aos-delay="200">Studio Open Ai Image Generator</h1>
+                        <p class="Home-cption" data-aos="fade-up" data-aos-delay="250">Find the promt for ChatGPT with one click</p>
 
-                        <div class="Home-btn">
+                        <div class="Home-btn" data-aos="fade-up" data-aos-delay="300">
                             <a href="/prompts.html" class="Home-btn__left">Explore</a>
                             <a href="#gallery" class="Home-btn__rigth">Wana see more?</a>
                         </div>
                     </div>
-                    <div class="poster">
+                    <div class="poster" data-aos="fade-up" data-aos-delay="350">
                         <div class="poster-cards">
                             <div class="poster-card__content">
                                 <div class="poster-text">
@@ -386,6 +391,7 @@
         prompt copied to clipboard!
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/script.js"></script>
     <script src="/script/theme.js"></script>
 
