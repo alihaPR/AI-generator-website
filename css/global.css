@@ -138,35 +138,24 @@
   
 }
 html {
-  min-height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-
 /* ----------------------------------------------- Main ----------------------------------------------- */
 
 .main {
-  min-height: 100vh;
   position: relative;
   background-color: var(--bg-color-main);
+  min-height: 100vh;  
+  
 }
 
 .main__background {
-  position: absolute; /* تغییر از fixed به absolute */
-  width: 100%;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 0;
 }
-
-
 .background-shapes{
-
 }
 .circle__left,.circle__right{
-  
 }
 .circle__left{
   width: 35.4375rem;
@@ -198,6 +187,7 @@ html {
   /* background-color: var(--bg-blur-2); */
   backdrop-filter: var(--bg-blur-overlay);
   z-index: 1;
+  
 }
 
 .container{
