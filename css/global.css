@@ -138,6 +138,8 @@
   
 }
 html {
+  min-height: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -147,8 +149,6 @@ html {
 .main {
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto; /* اسکرول عمودی فعال */
   background-color: var(--bg-color-main);
 }
 
