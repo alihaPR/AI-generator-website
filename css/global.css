@@ -303,7 +303,7 @@ html {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
   line-height: 21px;
 
 }
