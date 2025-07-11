@@ -217,14 +217,16 @@ window.addEventListener('resize', () => {
 
 // --------------------------------------- popup sub -----------------------------------------------
 
-  window.onload = function () {
-    const popup = document.getElementById("subscribeBox");
-    popup.style.display = "block";
-
-    // ⏱️ بستن خودکار بعد از 10 ثانیه (10000 میلی‌ثانیه)
+ window.onload = function () {
+  
     setTimeout(() => {
-      popup.style.display = "none";
-    }, 10000000);
+      const popup = document.getElementById("subscribeBox");
+      popup.style.display = "block";
+
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 10000); 
+    }, 3000);
   }
 
   function closeSubscribe() {
