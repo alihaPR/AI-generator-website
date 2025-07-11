@@ -215,4 +215,18 @@ window.addEventListener('resize', () => {
   AOS.refresh();
 });
 
-// --------------------------------------------------------------------------------------
+// --------------------------------------- popup sub -----------------------------------------------
+
+  window.onload = function () {
+    const popup = document.getElementById("subscribeBox");
+    popup.style.display = "block";
+
+    // ⏱️ بستن خودکار بعد از 10 ثانیه (10000 میلی‌ثانیه)
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 10000000);
+  }
+
+  function closeSubscribe() {
+    document.getElementById("subscribeBox").style.display = "none";
+  }
