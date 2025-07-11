@@ -206,7 +206,7 @@ function openPopup(el) {
 window.addEventListener("load", function () {
   AOS.refresh(); // اضافه کن
   AOS.init({
-    once: false,
+    once: true,
     duration: 1000
   });
 });
