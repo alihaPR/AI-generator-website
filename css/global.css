@@ -811,13 +811,18 @@ html {
 }
 /* ...existing code... */
 
-button:hover,.gallery-btn:hover,.poster-btn:hover,.gallary-btn-Rigth:hover,.poster-btn__btn:hover{
+button:hover:not(.no-global-style),
+.gallery-btn:hover:not(.no-global-style),
+.poster-btn:hover:not(.no-global-style),
+.gallary-btn-Rigth:hover:not(.no-global-style),
+.poster-btn__btn:hover:not(.no-global-style) {
   background-color: var(--hover-color-2);
   color: var(--text-color-4-btn);
-  box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4); 
-  transform: translateY(-3px); 
+  box-shadow: 0 4px 15px rgba(88, 191, 255, 0.4);
+  transform: translateY(-3px);
   transition: all 0.2s ease-in-out;
 }
+
 
 /* ---------------------------darkmood speed------------------------------ */
 /* ...existing code... */
