@@ -226,7 +226,7 @@ window.addEventListener('resize', () => {
       setTimeout(() => {
         popup.style.display = "none";
       }, 10000); 
-    }, 3000);
+    }, 4000);
   }
 
   function closeSubscribe() {
