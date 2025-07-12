@@ -893,4 +893,5 @@ body, .main, .header, .footer {
 }
 .info-bar>p>svg{
   fill: var(--text-color-1);
+  
 }
