@@ -225,7 +225,7 @@ window.addEventListener('resize', () => {
 
       setTimeout(() => {
         popup.style.display = "none";
-      }, 1000000); 
+      }, 10000); 
     }, 4000);
   }
 
