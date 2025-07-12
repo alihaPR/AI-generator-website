@@ -241,3 +241,27 @@ window.addEventListener('resize', () => {
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+//--------------------------------------------------------------------------------------------
+const boxContainer = document.getElementById('boxContainer');
+const infoBar = document.getElementById('infoBar');
+let timeoutId;
+
+function showInfoBar() {
+  clearTimeout(timeoutId);
+  infoBar.classList.add('active');
+  timeoutId = setTimeout(() => {
+    infoBar.classList.remove('active');
+  }, 4000);
+}
+
+boxContainer.addEventListener('mouseenter', showInfoBar);
+
+infoBar.addEventListener('mouseenter', () => {
+  clearTimeout(timeoutId);
+});
+
+infoBar.addEventListener('mouseleave', () => {
+  timeoutId = setTimeout(() => {
+    infoBar.classList.remove('active');
+  }, 10000);
+});
