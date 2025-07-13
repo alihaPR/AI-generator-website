@@ -217,21 +217,18 @@ window.addEventListener('resize', () => {
 
 // --------------------------------------- popup sub -----------------------------------------------
 
- window.onload = function () {
-  
-    setTimeout(() => {
-      const popup = document.getElementById("subscribeBox");
-      popup.style.display = "block";
+window.onload = function () {
+  setTimeout(() => {
+    const popup = document.getElementById("subscribeBox");
+    popup.style.display = "block";
+  }, 2000);
+}
 
-      setTimeout(() => {
-        popup.style.display = "none";
-      }, 10000); 
-    }, 4000);
-  }
+function closeSubscribe() {
+  const popup = document.getElementById("subscribeBox");
+  popup.style.display = "none";
+}
 
-  function closeSubscribe() {
-    document.getElementById("subscribeBox").style.display = "none";
-  }
   // ------------------------------------hotjar-----------------------------------------------
       (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
