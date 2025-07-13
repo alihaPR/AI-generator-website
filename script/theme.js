@@ -1,17 +1,13 @@
-function setDarkMode() {
-  document.documentElement.classList.add('dark-mode');
-}
-
-function setLightMode() {
-  document.documentElement.classList.remove('dark-mode');
-}
-
-//---------------------------------------------------------------------------------------------------------------
-
 // اعمال تم ذخیره‌شده هنگام لود صفحه
-if (localStorage.getItem('theme') === 'dark') {
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'dark' || savedTheme === null) {
+  // پیش‌فرض دارک مود
   document.documentElement.classList.add('dark-mode');
   document.getElementById('theme-checkbox').checked = true;
+  if (savedTheme === null) {
+    localStorage.setItem('theme', 'dark');
+  }
 } else {
   document.documentElement.classList.remove('dark-mode');
   document.getElementById('theme-checkbox').checked = false;
@@ -25,5 +21,6 @@ document.getElementById('theme-checkbox').addEventListener('change', function() 
   } else {
     document.documentElement.classList.remove('dark-mode');
     localStorage.setItem('theme', 'light');
-  }
+  } 
 });
+
