@@ -98,6 +98,38 @@ html {
   background-size: cover;
 
 }
+.poster-wrapper {
+  display: flex; /* یا grid یا هرچی استفاده می‌کنی */
+  flex-wrap: wrap;
+}
+
+.poster-cards {
+  position: relative;
+  overflow: hidden;
+}
+
+.poster-cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+/* زوم در حالت hover */
+.poster-cards:hover::before {
+  transform: scale(1.1);
+}
+
+/* محتوا داخل کارت (اگه باشه) */
+.poster-cards > * {
+  position: relative;
+  z-index: 1;
+}
+
 .poster-cards:nth-child(2){
   background-image: url(/image/file_00000000790861f79e41f5b26e44dd77.webp);
 }
