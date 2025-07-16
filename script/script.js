@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   // انیمیشن اسلایدر قبل/بعد
   const afterImages = document.querySelectorAll('.after-image');
@@ -111,7 +112,7 @@ window.onload = function() {
 };
 
 
-// ---------------------------------------------------- see more -----------------------------------------------------------------
+// // ---------------------------------------------------- see more -----------------------------------------------------------------
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -147,16 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// ---------------------------------------------------scrole top -----------------------------------------------------------------
-document.querySelector('.footer-scroll-btn').addEventListener('click', function(e) {
-  e.preventDefault();
-  const target = document.getElementById('home');
-  if (target) {
-    const y = target.getBoundingClientRect().top + window.pageYOffset - 100; // 100 پیکسل برای هدر فیکس
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-});
-// ---------------------------------------------------copy prompt -----------------------------------------------------------------
+
+// // ---------------------------------------------------copy prompt -----------------------------------------------------------------
 function copyPrompt() {
   const text = document.getElementById('promptText').innerText;
   navigator.clipboard.writeText(text).then(function() {
@@ -245,6 +238,7 @@ let timeoutId;
 
 function showInfoBar() {
   clearTimeout(timeoutId);
+  console.log("test 1 2 3");
   infoBar.classList.add('active');
   timeoutId = setTimeout(() => {
     infoBar.classList.remove('active');
@@ -262,9 +256,17 @@ infoBar.addEventListener('mouseleave', () => {
     infoBar.classList.remove('active');
   }, 10000);
 });
-// --------------------------------------------------------------------------------------------
+// // --------------------------------------------------------------------------------------------
 
- 
+ // ---------------------------------------------------scrole top -----------------------------------------------------------------
+document.querySelector('.footer-scroll-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  const target = document.getElementById('home');
+  if (target) {
+    const y = target.getBoundingClientRect().top + window.pageYOffset - 100; // 100 پیکسل برای هدر فیکس
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+});
 
 
 

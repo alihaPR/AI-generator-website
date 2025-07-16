@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompts</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/Prompts.css">
     <link rel="shortcut icon" href="image/favicon.png" type="favicon.ico">
-    
-   
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
 </head>
@@ -20,14 +23,14 @@
 
     <header class="header">
 
-        <a href="./index.html" class="logo">Dream morph</a>
+        <a href="./index.html" class="logo" data-aos="fade-up" data-aos-delay="0">Dream morph</a>
 
         <ul class="navbar">
             <li class="navbar__item">
-                <a href="/index.html" class="navbar__link">Home</a>
+                <a href="/index.html" class="navbar__link" data-aos="fade-up" data-aos-delay="100">Home</a>
             </li>
             <li class="navbar__item dropdown">
-                <a href="#tools" class="navbar__link">Tools</a>
+                <a href="#tools" class="navbar__link" data-aos="fade-up" data-aos-delay="150">Tools</a>
                 <div class="dropdown-menu">
                     <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
@@ -92,12 +95,12 @@
                 </div>
             </li>
             <li class="navbar__item">
-                <a href="/prompts.html" class="navbar__link">Prompts</a>
+                <a href="/prompts.html" class="navbar__link" data-aos="fade-up" data-aos-delay="200">Prompts</a>
             </li>
         </ul>
 
 
-        <div class="navbar__btn">
+        <div class="navbar__btn"data-aos="fade-up" data-aos-delay="250">
             <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="white"/>
                             </svg> -->
@@ -107,7 +110,7 @@
                 <div class="theme-toggle">
                     <input type="checkbox" class="checkbox" id="theme-checkbox">
                     <label for="theme-checkbox" class="checkbox-label">
-                          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none">
                             <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="#fff" />
                         </svg>
                         <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -148,7 +151,7 @@
                 <!-- Home Website -->
 
                 <section class="home">
-                    <div class="poster">
+                    <div class="poster" data-aos="fade-up" data-aos-delay="200">
 
                         <div class="poster-cards">
                             <div class="poster-card__content">
@@ -285,7 +288,7 @@
                                     data-img-before="/image/file_000000009e8c61f7b6bf7c08bb604047.webp"
                                     data-img-after="/image/49044a2e80f99ba1c1afb2b9507bb213.webp"
                                     onclick="openPopup(this)">
-                                   Try Filter
+                                    Try Filter
                                 </a>
                             </div>
                         </div>
@@ -315,7 +318,7 @@
                                     data-prompt="Delicate hand embroidery illustration on linen fabric, showing [SUBJECT], soft earthy tones, visible threads and stitching texture, subtle shading, peaceful and minimalist countryside atmosphere, natural element included, finely detailed embroidery art, textile aesthetic"
                                     data-img-before="/image/IMG_4321.webp" data-img-after="/image/IMG_4199.webp"
                                     onclick="openPopup(this)">
-                                   Try Filter
+                                    Try Filter
                                 </a>
                             </div>
                         </div>
@@ -330,7 +333,7 @@
                                     data-prompt="“Redo this image into a bold, abstract modernist painting characterized by vivid, contrasting colors, wildly expressive facial distortions, fractured anatomy, and a playful, surreal interpretation of form. Use exaggerated geometric shapes and overlapping perspectives to depict figures and objects from multiple viewpoints at once. Faces should be broken into sharp planes, with asymmetrical eyes, twisted features, and emotionally charged expressions. Flatten depth, simplify volumes, and let imagination override realism, embracing the radical spontaneity and avant-garde experimentation of early 20th-century European modernism.”"
                                     data-img-before="/image/file_000000008f0861f7b59b3c9011c4e0c9.webp"
                                     data-img-after="/image/IMG_4306.webp" onclick="openPopup(this)">
-                                   Try Filter
+                                    Try Filter
                                 </a>
                             </div>
                         </div>
@@ -799,6 +802,11 @@
                         </svg>
                         <div class="info-bar" id="infoBar">
                             <p>
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 17C12.2833 17 12.5208 16.9042 12.7125 16.7125C12.9042 16.5208 13 16.2833 13 16C13 15.7167 12.9042 15.4792 12.7125 15.2875C12.5208 15.0958 12.2833 15 12 15C11.7167 15 11.4792 15.0958 11.2875 15.2875C11.0958 15.4792 11 15.7167 11 16C11 16.2833 11.0958 16.5208 11.2875 16.7125C11.4792 16.9042 11.7167 17 12 17ZM11 13H13V7H11V13ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22Z" />
+                                </svg>
                                 Only 3 free images! Get unlimited access by subscribing through this
                                 <a href="https://example.com" target="_blank" class="info-link"> website</a>
                             </p>
@@ -824,8 +832,9 @@
         style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
         prompt copied to clipboard!
     </div>
-    <script src="./script/theme.js"></script>
-    <script src="./script/script.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script/theme.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 
 </html>

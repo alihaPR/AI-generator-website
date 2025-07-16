@@ -516,43 +516,6 @@ html {
   border-radius: 7px;
   z-index: 3;
 }
-/* .popup-vocher {
-  font-family: "Reagular";
-  font-size: 11px;
-  width: 350px;
-  margin-top: 65px;
-  margin-left: 5px;
-  opacity: 0;
-
-  transform: translateY(40px) scale(0.95) rotateX(30deg);
-  filter: blur(8px);
-  animation: popupVocherFancyIn 0.8s cubic-bezier(.22,1,.36,1) forwards;
-}
-
-@keyframes popupVocherFancyIn {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95) rotateX(30deg);
-    filter: blur(8px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-8px) scale(1.03) rotateX(-8deg);
-    filter: blur(1.5px);
-  }
-  80% {
-    transform: translateY(2px) scale(0.98) rotateX(2deg);
-    filter: blur(0.5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1) rotateX(0deg);
-    filter: blur(0);
-  }
-}
-.popup-vocher,a{
-  text-decoration: none;
-} */
 
 /* ------------------------------------------------------- container-img-prompts ------------------------------------------------------- */
 
