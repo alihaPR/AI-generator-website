@@ -283,6 +283,18 @@ html {
   transform: translateY(-3px); 
   transition: all 0.2s ease-in-out;
  }
+ .poster-zoom {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.poster-zoom:hover {
+  transform: scale(1.015);
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+}
+
 /* -------------------------------------------fotter---------------------------------------------- */
 
 .footer{
