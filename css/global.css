@@ -152,8 +152,11 @@ html {
 }
 
 .main__background {
+    position: relative;
+  overflow: hidden;
 }
 .background-shapes{
+
 }
 .circle__left,.circle__right{
 }
@@ -871,3 +874,5 @@ body, .main, .header, .footer {
   fill: var(--text-color-1);
   
 }
+
+
