@@ -258,12 +258,14 @@ infoBar.addEventListener('mouseleave', () => {
 });
 // ------------------------------------------------hamber ger menu--------------------------------------------
 
-const menuIcon = document.querySelector('.heder__icon');
+const menuIcon = document.getElementById('menu-toggle');
 const navbar = document.querySelector('.navbar');
 
 menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('active');
+  menuIcon.classList.toggle('active');
 });
+
 
 
  // ---------------------------------------------------scrole top -----------------------------------------------------------------
