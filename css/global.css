@@ -14,7 +14,8 @@
   --bg-color-popup: #ffffff; /* popup */
   --bg-color-popup-box: #f5f5f5; /* popup box */
   --bg-color-close:#FFFFFF;
-
+  --bg-color-hamberger:#000000;
+  --bg-color-hamberger-menu:#fdfafa;
 
   
   --bg-blur-1: rgba(255, 255, 255, 0.1); 
@@ -66,6 +67,9 @@
   --bg-color-popup: #151515; /* popup */
   --bg-color-popup-box: #0b0b0b; /* popup box */
   --bg-color-close:#151515;
+  --bg-color-hamberger:#ffffff;
+  --bg-color-hamberger-menu:#3a3a3a;
+
 
   --bg-blur-1: rgba(24, 24, 24, 0.1); 
   --bg-blur-2: rgba(24, 24, 24, 0.95); 

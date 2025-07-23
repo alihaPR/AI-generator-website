@@ -256,7 +256,15 @@ infoBar.addEventListener('mouseleave', () => {
     infoBar.classList.remove('active');
   }, 10000);
 });
-// // --------------------------------------------------------------------------------------------
+// ------------------------------------------------hamber ger menu--------------------------------------------
+
+  const menuIcon = document.querySelector('.heder__icon');
+  const navbar = document.querySelector('.navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+
 
  // ---------------------------------------------------scrole top -----------------------------------------------------------------
 document.querySelector('.footer-scroll-btn').addEventListener('click', function(e) {

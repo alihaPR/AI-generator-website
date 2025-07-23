@@ -2,7 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/*------------------------------------------------------------------ home -------------------------------------------------------------*/
+/*------------------------------------------------------------------ head -------------------------------------------------------------*/
+
 
 /*------------------------------------------------------------------ home -------------------------------------------------------------*/
 
@@ -427,4 +428,65 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/*------------------------------------------------risponsive------------------------------------------------------ */
+/* @media only screen and (max-width: 320px) {
+
+  .navbar__btn {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+
+
+  }
+
+  .heder__icon {
+    display: block;
+  }
+
+} */
+
+/* پایه */
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+/* برای موبایل: مخفی کردن navbar و نمایش همبرگر */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 350px;
+    background-color: var(--bg-color-hamberger-menu);
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .navbar__btn{
+    display: none;
+  }
+  .navbar.active {
+    right: 0;
+  }
+
+  .heder__icon {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
+
+/* پیش‌فرض دسکتاپ: مخفی کردن آیکون منو */
+.heder__icon {
+  display: none;
+  font-size: 24px;
+  color: var(  --bg-color-hamberger);
 }
