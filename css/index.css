@@ -431,28 +431,11 @@ html {
 }
 
 /*------------------------------------------------risponsive------------------------------------------------------ */
-/* @media only screen and (max-width: 320px) {
 
-  .navbar__btn {
-    display: none;
-  }
-
-  .navbar {
-    display: none;
-
-
-  }
-
-  .heder__icon {
-    display: block;
-  }
-
-} */
-
-/* پایه */
-.navbar {
-  display: flex;
-  gap: 1rem;
+.heder__icon {
+  display: none;
+  font-size: 15px;
+  color: var(--bg-color-hamberger);
 }
 
 /* برای موبایل: مخفی کردن navbar و نمایش همبرگر */
@@ -460,21 +443,23 @@ html {
   .navbar {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%; /* ✅ تغییر از right به left */
     height: 100vh;
     width: 350px;
     background-color: var(--bg-color-hamberger-menu);
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 1.5rem;
-    transition: right 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out; /* ✅ تغییر transition به left */
     z-index: 999;
   }
-  .navbar__btn{
+
+  .navbar__btn {
     display: none;
   }
+
   .navbar.active {
-    right: 0;
+    left: 0; /* ✅ منو باز بشه از چپ */
   }
 
   .heder__icon {
@@ -484,9 +469,5 @@ html {
   }
 }
 
+
 /* پیش‌فرض دسکتاپ: مخفی کردن آیکون منو */
-.heder__icon {
-  display: none;
-  font-size: 24px;
-  color: var(  --bg-color-hamberger);
-}
