@@ -332,6 +332,7 @@
   transform: translateY(30px) rotateX(15deg);
 
 }
+
 /*------------------------------------------------risponsive------------------------------------------------------ */
 
 /* همبرگر آیکون پایه */
@@ -340,7 +341,8 @@
   height: 24px;
   position: relative;
   cursor: pointer;
-  display: none; /* در مدیای کوئری فعال میشه */
+  display: none;
+  /* در مدیای کوئری فعال میشه */
   z-index: 1001;
 }
 
@@ -349,7 +351,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background:var(--bg-color-hamberger);
+  background: var(--bg-color-hamberger);
   border-radius: 3px;
   transition: all 0.4s ease;
 }
@@ -357,9 +359,11 @@
 .heder__icon span:nth-child(1) {
   top: 0;
 }
+
 .heder__icon span:nth-child(2) {
   top: 10px;
 }
+
 .heder__icon span:nth-child(3) {
   top: 20px;
 }
@@ -393,14 +397,16 @@
   .navbar {
     position: fixed;
     top: 0;
-    left: -100%; /* ✅ تغییر از right به left */
+    left: -100%;
+    /* ✅ تغییر از right به left */
     height: 100vh;
     width: 300px;
     background-color: var(--bg-color-hamberger-menu);
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 1.5rem;
-    transition: left 0.3s ease-in-out; /* ✅ تغییر transition به left */
+    transition: left 0.3s ease-in-out;
+    /* ✅ تغییر transition به left */
     z-index: 999;
   }
 
@@ -409,7 +415,8 @@
   }
 
   .navbar.active {
-    left: 0; /* ✅ منو باز بشه از چپ */
+    left: 0;
+    /* ✅ منو باز بشه از چپ */
   }
 
   .heder__icon {
@@ -417,5 +424,24 @@
     cursor: pointer;
     z-index: 1000;
   }
-}
+  .container{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
 
+  .poster {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .poster-cards {
+    margin: 0 auto;
+  }
+
+
+}
