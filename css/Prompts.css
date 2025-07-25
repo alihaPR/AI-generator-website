@@ -424,24 +424,9 @@
     cursor: pointer;
     z-index: 1000;
   }
-  .container{
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
 
-  .poster {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
 
-  .poster-cards {
-    margin: 0 auto;
-  }
+
 
 
 }

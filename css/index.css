@@ -434,11 +434,13 @@ html {
 
 /* همبرگر آیکون پایه */
 .heder__icon {
-  width: 30px;
-  height: 24px;
+  width: 24px;
+  height: 18px;
+
   position: relative;
   cursor: pointer;
-  display: none; /* در مدیای کوئری فعال میشه */
+  display: none;
+  /* در مدیای کوئری فعال میشه */
   z-index: 1001;
 }
 
@@ -447,7 +449,7 @@ html {
   position: absolute;
   height: 3px;
   width: 100%;
-  background:var(--bg-color-hamberger);
+  background: var(--bg-color-hamberger);
   border-radius: 3px;
   transition: all 0.4s ease;
 }
@@ -455,9 +457,11 @@ html {
 .heder__icon span:nth-child(1) {
   top: 0;
 }
+
 .heder__icon span:nth-child(2) {
   top: 10px;
 }
+
 .heder__icon span:nth-child(3) {
   top: 20px;
 }
@@ -491,14 +495,16 @@ html {
   .navbar {
     position: fixed;
     top: 0;
-    left: -100%; /* ✅ تغییر از right به left */
+    left: -100%;
+    /* ✅ تغییر از right به left */
     height: 100vh;
     width: 300px;
     background-color: var(--bg-color-hamberger-menu);
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 1.5rem;
-    transition: left 0.3s ease-in-out; /* ✅ تغییر transition به left */
+    transition: left 0.3s ease-in-out;
+    /* ✅ تغییر transition به left */
     z-index: 999;
   }
 
@@ -507,13 +513,53 @@ html {
   }
 
   .navbar.active {
-    left: 0; /* ✅ منو باز بشه از چپ */
+    left: 0;
+    /* ✅ منو باز بشه از چپ */
   }
 
   .heder__icon {
     display: block;
     cursor: pointer;
     z-index: 1000;
+  }
+
+  .Home-title {
+    width: 430px;
+    font-size: 30px;
+  }
+
+  .Home-cption {
+    width: 400px;
+    font-size: 15px;
+
+  }
+
+  .Home-btn {
+    width: 249px;
+    height: 47.53px;
+  }
+
+  .Home-btn__left {
+    width: 91px;
+    height: 29.55px;
+    font-size: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .Home-btn__rigth {
+    width: 129px;
+    height: 29.55px;
+    font-size: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 
