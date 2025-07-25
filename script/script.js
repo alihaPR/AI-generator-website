@@ -266,7 +266,13 @@ menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('active');
 });
 
-
+// -------------------------------------------------home img center-------------------------------------------
+  window.addEventListener("load", () => {
+    const secondCard = document.querySelector(".poster .poster-cards:nth-child(2)");
+    if (secondCard) {
+      secondCard.scrollIntoView({ behavior: "smooth", inline: "center" });
+    }
+  });
 // -------------------------------------------------indicator img-------------------------------------------
   const container = document.querySelector('.poster');
   const cards = document.querySelectorAll('.poster .poster-cards');
