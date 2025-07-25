@@ -466,11 +466,7 @@ html {
 
 
 /*------------------------------------------------risponsive------------------------------------------------------ */
-.poster-spacer {
-  flex: 0 0 calc(50vw - 106px);
-  /* 106 = 100px نصف کارت + 6px نصف فاصله */
-  pointer-events: none;
-}
+
 
 /* همبرگر آیکون پایه */
 .heder__icon {
@@ -630,6 +626,10 @@ html {
   .poster .poster-cards:nth-child(2) {
     scroll-margin-left: 30%;
   }
+  .poster-spacer {
+  flex: 0 0 calc(50vw - 106px);
+  pointer-events: none;
+}
 }
 
 
