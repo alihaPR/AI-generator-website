@@ -293,13 +293,23 @@ document.querySelector('.footer-scroll-btn').addEventListener('click', function(
 
 
 
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const container = document.querySelector(".poster");
+    const cards = document.querySelectorAll(".poster .poster-cards");
+    const secondCard = cards[1]; // چون NodeList صفر اندیسیه
 
-// window.addEventListener("load", () => {
-//   const secondCard = document.querySelector(".poster .poster-cards:nth-child(2)");
-//   if (secondCard) {
-//     secondCard.scrollIntoView({ behavior: "smooth", inline: "center" });
-//   }
-// });
+    if (container && secondCard) {
+      const containerWidth = container.offsetWidth;
+      const cardWidth = secondCard.offsetWidth;
+      const cardOffsetLeft = secondCard.offsetLeft;
+
+      const scrollLeft = cardOffsetLeft - (containerWidth / 2) + (cardWidth / 2);
+
+      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
+    }
+  }, 100); // صبر کن layout کامل بشه
+});
 
 
 
