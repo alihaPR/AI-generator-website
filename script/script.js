@@ -292,24 +292,24 @@ document.querySelector('.footer-scroll-btn').addEventListener('click', function(
 });
 
 
-
 window.addEventListener("load", () => {
   setTimeout(() => {
     const container = document.querySelector(".poster");
-    const cards = document.querySelectorAll(".poster .poster-cards");
-    const secondCard = cards[1]; // چون NodeList صفر اندیسیه
+    const cards = container.querySelectorAll(".poster-cards");
+    if (cards.length < 2) return;
 
-    if (container && secondCard) {
-      const containerWidth = container.offsetWidth;
-      const cardWidth = secondCard.offsetWidth;
-      const cardOffsetLeft = secondCard.offsetLeft;
+    const cardToCenter = cards[1]; // کارت دوم
 
-      const scrollLeft = cardOffsetLeft - (containerWidth / 2) + (cardWidth / 2);
+    const scrollLeft = cardToCenter.offsetLeft - (container.offsetWidth - cardToCenter.offsetWidth) / 2;
 
-      container.scrollTo({ left: scrollLeft, behavior: "smooth" });
-    }
-  }, 100); // صبر کن layout کامل بشه
+    container.scrollTo({
+      left: scrollLeft,
+      behavior: "smooth"
+    });
+  }, 100);
 });
+
+
 
 
 

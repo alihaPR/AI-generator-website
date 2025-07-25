@@ -95,6 +95,7 @@ html {
   gap: 12px;
   margin-top: 125px;
 
+
 }
 
 .poster-cards {
@@ -135,16 +136,18 @@ html {
 
 
 
-
 .poster-cards:nth-child(2) {
+  background-image: url(/image/poster2.webp);
+}
+.poster-cards:nth-child(3) {
   background-image: url(/image/file_00000000790861f79e41f5b26e44dd77.webp);
 }
 
-.poster-cards:nth-child(3) {
+.poster-cards:nth-child(4) {
   background-image: url(/image/claymation.webp);
 }
 
-.poster-cards:nth-child(4) {
+.poster-cards:nth-child(5) {
   /* background-image: url(/image/5.jpg); */
   background-image: url(/image/pixar3d.webp);
 }
@@ -429,6 +432,7 @@ html {
     transform: translateY(0);
   }
 }
+
 /*------------------------------------------------indicator img------------------------------------------------------ */
 .poster-indicators {
   display: flex;
@@ -436,7 +440,8 @@ html {
   align-items: center;
   margin-top: 16px;
   gap: 8px;
-  height: 14px; /* ارتفاع کانتینر متناسب با اندازه دات‌ها */
+  height: 14px;
+  /* ارتفاع کانتینر متناسب با اندازه دات‌ها */
 }
 
 .poster-indicators .dot {
@@ -460,7 +465,10 @@ html {
 
 
 /*------------------------------------------------risponsive------------------------------------------------------ */
-
+.poster-spacer {
+  flex: 0 0 calc(50vw - 106px); /* 106 = 100px نصف کارت + 6px نصف فاصله */
+  pointer-events: none;
+}
 /* همبرگر آیکون پایه */
 .heder__icon {
   width: 24px;
@@ -590,6 +598,7 @@ html {
     align-items: center;
 
   }
+
   .poster {
     justify-content: flex-start;
     overflow-x: auto;
@@ -597,7 +606,9 @@ html {
     padding: 0 20px;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+
   }
+  
 
   .poster::-webkit-scrollbar {
     display: none;
