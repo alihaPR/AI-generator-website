@@ -439,7 +439,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 20px;
   gap: 8px;
   height: 14px;
   /* ارتفاع کانتینر متناسب با اندازه دات‌ها */
@@ -467,9 +467,11 @@ html {
 
 /*------------------------------------------------risponsive------------------------------------------------------ */
 .poster-spacer {
-  flex: 0 0 calc(50vw - 106px); /* 106 = 100px نصف کارت + 6px نصف فاصله */
+  flex: 0 0 calc(50vw - 106px);
+  /* 106 = 100px نصف کارت + 6px نصف فاصله */
   pointer-events: none;
 }
+
 /* همبرگر آیکون پایه */
 .heder__icon {
   width: 24px;
@@ -525,7 +527,7 @@ html {
   .heder__icon {
     display: block;
   }
-  
+
 }
 
 
@@ -566,12 +568,14 @@ html {
   .Home-title {
     width: 430px;
     font-size: 30px;
+    margin-bottom: 8px;
+
   }
 
   .Home-cption {
     width: 400px;
     font-size: 15px;
-
+    margin-bottom: 8px;
   }
 
   .Home-btn {
