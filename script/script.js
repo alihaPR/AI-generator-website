@@ -267,7 +267,20 @@ menuIcon.addEventListener('click', () => {
 });
 
 
+// -------------------------------------------------indicator img-------------------------------------------
+  const container = document.querySelector('.poster');
+  const cards = document.querySelectorAll('.poster .poster-cards');
+  const dots = document.querySelectorAll('.poster-indicators .dot');
 
+  container.addEventListener('scroll', () => {
+    const scrollLeft = container.scrollLeft;
+    const cardWidth = cards[0].offsetWidth + 12; // کارت + فاصله gap
+    const activeIndex = Math.round(scrollLeft / cardWidth);
+
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === activeIndex);
+    });
+  });
  // ---------------------------------------------------scrole top -----------------------------------------------------------------
 document.querySelector('.footer-scroll-btn').addEventListener('click', function(e) {
   e.preventDefault();

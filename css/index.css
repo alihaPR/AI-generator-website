@@ -429,6 +429,31 @@ html {
     transform: translateY(0);
   }
 }
+/*------------------------------------------------indicator img------------------------------------------------------ */
+.poster-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.poster-indicators .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.poster-indicators .dot.active {
+  width: 30px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #000;
+  opacity: 1;
+}
+
 
 /*------------------------------------------------risponsive------------------------------------------------------ */
 
@@ -560,6 +585,28 @@ html {
     justify-content: center;
     align-items: center;
 
+  }
+  .poster {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .poster::-webkit-scrollbar {
+    display: none;
+  }
+
+  .poster-cards {
+    flex: 0 0 auto;
+    width: 70%;
+    scroll-snap-align: center;
+  }
+
+  .poster .poster-cards:nth-child(2) {
+    scroll-margin-left: 30%;
   }
 }
 
