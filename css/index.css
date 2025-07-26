@@ -685,6 +685,69 @@ html {
     width: 38px;
     height: 36px;
   }
+    .poster-cards {
+    width: 70%;
+    height: 330px;
+    aspect-ratio: 3 / 4;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .poster-card__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 15px 12px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* فاصله بین متن و دکمه */
+  }
+
+  .poster-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    color: white;
+    font-size: 14px;
+  }
+
+  .poster-text h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .poster-text p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+  }
+
+  .poster-card__btn {
+    background: white;
+    border-radius: 15px;
+    padding: 9px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+
+  .poster-card__btn:hover {
+    background: #f0f0f0;
+  }
 }
 
 
