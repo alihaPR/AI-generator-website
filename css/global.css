@@ -478,7 +478,12 @@ html {
   font-size: 14px;
 }
 
-
+.footer-content__continer{
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 
