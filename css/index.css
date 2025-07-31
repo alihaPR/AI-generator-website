@@ -749,8 +749,63 @@ html {
   opacity: 1;
 }
 
+
   
 }
+@media (max-width: 768px) {
+  .gallary {
+    height: auto;
+    padding: 50px 20px;
+    margin-top: 50px;
+  }
+
+  .gallary-item {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .gallary-item:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .gallary-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .gallary-text {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .gallary-text h4{
+    font-size: 18px;
+  }
+ .gallary-text p{
+    font-size: 14px;
+  }
+
+  .gallary-item:nth-child(2) .gallary-text {
+    max-width: 100%;
+  }
+
+  .gallery-btn, .gallary-btn-Rigth {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .gallary-btn-butten {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+  }
+}
+
+
 
 
 /* پیش‌فرض دسکتاپ: مخفی کردن آیکون منو */
