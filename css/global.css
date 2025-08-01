@@ -696,7 +696,7 @@ html {
   }
 
   #promptText {
-    max-width: 230px;
+    max-width: 330px;
     font-size: 10px;
     color: var(--text-color-box-popup);
     text-align: start;
