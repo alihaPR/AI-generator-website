@@ -603,6 +603,7 @@ html {
   z-index: 3;
 }
 
+
 @media (max-width: 600px) {
   .popup {
     align-items: flex-start;
@@ -637,6 +638,20 @@ html {
     align-items: flex-start;
     text-align: left;
   }
+    .slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    touch-action: none; /* برای جلوگیری از اسکرول ناخواسته در موبایل */
+  }
 
   .popup-content-left h4 {
     font-size: 14px;
@@ -659,7 +674,7 @@ html {
 
 .popup-box {
   position: relative;
-  width: 255.84px;
+  width: 330px;
   height: 70px;
   margin-top: 65px;
   padding: 8px 40px 8px 12px;
@@ -768,7 +783,6 @@ html {
 }
 
 .popup-slider {
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -777,7 +791,6 @@ html {
   background: white;
   cursor: ew-resize;
   z-index: 2;
-  outline: none;
 }
 
 /* ----*/
