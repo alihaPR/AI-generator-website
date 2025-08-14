@@ -313,3 +313,15 @@ window.addEventListener("load", () => {
 
 
 
+// ---------------------------------------------------------------------
+const toolsLink = document.querySelector('.dropdown > .navbar__link');
+const mobileSubmenu = document.querySelector('.dropdown .mobile-submenu');
+const arrowIcon = toolsLink.querySelector('.arrow');
+
+toolsLink.addEventListener('click', function(e) {
+  if (window.innerWidth <= 768) {
+    e.preventDefault();
+    mobileSubmenu.classList.toggle('active');
+    arrowIcon.classList.toggle('open');
+  }
+});

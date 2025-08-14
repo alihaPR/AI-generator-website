@@ -1150,3 +1150,10 @@ body,
     z-index: 0;
   }
 }
+
+.mobile-submenu{
+  display: none;
+}
+.arrow{
+  display: none;
+}

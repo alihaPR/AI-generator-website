@@ -23,7 +23,6 @@
 
     <header class="header">
 
-
         <a href="./index.html" class="logo" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"
             data-aos-easing="ease-in-out">Dream morph</a>
 
@@ -37,9 +36,47 @@
                     data-aos-easing="ease-in-out">Gallery</a>
             </li>
 
+            <!-- ===================== Tools ===================== -->
             <li class="navbar__item dropdown">
-                <a href="#tools" class="navbar__link" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">Tools</a>
+                <!-- لینک اصلی Tools -->
+                <a href="#tools" class="navbar__link mobile-tools-toggle" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    Tools
+                    <span class="arrow">&#9662;</span>
+                </a>
+
+                <!-- زیرمنو مخصوص موبایل -->
+                <ul class="mobile-submenu">
+                    <li><a data-popup="popup1"
+                            data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
+                            data-img-before="/image/202505182125312.webp" data-img-after="/image/20250518212531.webp"
+                            onclick="openPopup(this)">Image Upscaler</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
+                            data-img-before="/image/imggallery2.webp" data-img-after="/image/imggallery.webp"
+                            onclick="openPopup(this)">Remove Backgrounds</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
+                            data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
+                            data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp"
+                            onclick="openPopup(this)">Social Glowr</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
+                            data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
+                            data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp" onclick="openPopup(this)">Skin
+                            Magic</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
+                            data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
+                            data-img-after="/image/1924164fff129f91b75158eaf944c137.webp"
+                            onclick="openPopup(this)">Product Poster</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
+                            data-img-before="/image/photo19483072295.jpg" data-img-after="/image/photo19452945200.webp"
+                            onclick="openPopup(this)">3*4 image</a></li>
+                </ul>
+
+                <!-- منوی پاپ‌آپ دسکتاپ -->
                 <div class="dropdown-menu">
                     <div class="dropdown-row" data-popup="popup1" data-aos="zoom" data-aos-duration="1000"
                         data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
@@ -61,7 +98,7 @@
                             <p>Easily remove or change your photo background</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
                         data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
                         data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp" onclick="openPopup(this)">
@@ -71,7 +108,7 @@
                             <p>Stylish visuals for modern social media posts</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
                         data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
                         data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp" onclick="openPopup(this)">
@@ -81,7 +118,7 @@
                             <p>Clear, soft, and natural face retouch</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
                         data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
                         data-img-after="/image/1924164fff129f91b75158eaf944c137.webp" onclick="openPopup(this)">
@@ -91,7 +128,7 @@
                             <p>Eye-catching product ads with sharp design</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
                         data-img-before="/image/photo19483072295.jpg" data-img-after="/image/photo19452945200.webp"
                         onclick="openPopup(this)">
@@ -103,6 +140,7 @@
                     </div>
                 </div>
             </li>
+            <!-- ===================== End Tools ===================== -->
 
             <li class="navbar__item">
                 <a href="/prompts.html" class="navbar__link" data-aos="fade-up" data-aos-delay="250"
@@ -110,19 +148,12 @@
             </li>
         </ul>
 
-
         <div class="navbar__btn">
-            <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L21 19.6L19.6 21ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="white"/>
-                                        </svg> -->
-
-            <!-- ...dark mood  btn... -->
             <div class="navbar__right-placeholder" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
                 <div class="theme-toggle">
                     <input type="checkbox" class="checkbox" id="theme-checkbox">
                     <label for="theme-checkbox" class="checkbox-label">
-                        <!-- اول ماه، بعد خورشید -->
                         <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none">
                             <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="#fff" />
                         </svg>
@@ -145,23 +176,14 @@
             </div>
         </div>
 
-
         <span class="heder__icon" id="menu-toggle" data-aos="fade-up" data-aos-delay="100">
             <span></span>
             <span></span>
             <span></span>
         </span>
 
-
-
-
-
-
-
-
-
-
     </header>
+
 
     <!-- Main -->
 
@@ -355,22 +377,23 @@
                         <div class="fotter-contact">
                             <h4>Contact</h4>
                             <div class="footer-content__continer">
-                                <p><a href="mailto:dreammorphi@gmail.com" class="fotter-contact-1">Email:dreammorphi@gmail.com</a></p>
+                                <p><a href="mailto:dreammorphi@gmail.com"
+                                        class="fotter-contact-1">Email:dreammorphi@gmail.com</a></p>
 
                                 <!-- <p><a href="tel:+9809187623454" class="fotter-contact-2">Insta:dreammorph</a></p> -->
                                 <!-- <p><a href="https://www.instagram.com" target="_blank"
                                     class="fotter-contact-3">Tel:+987267373646</a></p> -->
-                                    <a href="#home" class="fotter-contact-btn footer-scroll-btn">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                <a href="#home" class="fotter-contact-btn footer-scroll-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                        d="M9.99984 15.8334V4.16675M9.99984 4.16675L4.1665 10.0001M9.99984 4.16675L15.8332 10.0001"
-                                        stroke="white" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                            d="M9.99984 15.8334V4.16675M9.99984 4.16675L4.1665 10.0001M9.99984 4.16675L15.8332 10.0001"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </a>
                             </div>
-                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -444,7 +467,7 @@
                     <img id="popupImageBefore" class="before" src="" alt="">
                     <img id="popupImageAfter" class="after" src="" alt="">
                     <div class="popup-slider">
-                         <div class="slider-handle"></div>
+                        <div class="slider-handle"></div>
                     </div>
                 </div>
             </div>
