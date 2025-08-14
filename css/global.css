@@ -1126,7 +1126,7 @@ body,
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
   .circle__right {
     width: 231px;
@@ -1156,4 +1156,87 @@ body,
 }
 .arrow{
   display: none;
+}
+/* پنهان کردن منوی دسکتاپ در موبایل */
+@media (max-width: 480px) {
+  .navbar .dropdown-menu {
+    display: none;
+    /* مخفی کردن کل منو */
+    flex-direction: column;
+    background: #fff;
+    position: relative;
+    padding: 0.5rem;
+  }
+
+  .navbar .dropdown-menu.active {
+    display: flex;
+    /* وقتی فعال شد نمایش داده شود */
+  }
+
+  .dropdown-row {
+    display: none;
+    /* مخفی کردن ردیف‌ها */
+  }
+
+  .dropdown-row.mobile-item {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown-row.mobile-item:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-row h5 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .dropdown-row p {
+    display: none;
+    /* فقط تیترها را نشان بده */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .mobile-submenu {
+    display: none;
+    padding-left: 20px;
+    /* کمی تو رفتگی برای زیرمنو */
+    flex-direction: column;
+  }
+
+  .mobile-submenu li {
+    list-style: none;
+    padding: 5px 0;
+  }
+
+  .mobile-submenu li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Light';
+    font-size: 13px;
+    color: var(--text-color-1);
+  }
+
+  .mobile-submenu.active {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+
+
+  }
+
+  /* فلش چرخان وقتی بازه */
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-left: 5px;
+  }
+
+  .arrow.open {
+    transform: rotate(180deg);
+  }
 }
