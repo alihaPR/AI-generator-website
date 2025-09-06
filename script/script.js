@@ -68,33 +68,45 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // اسلایدر داخلی پاپ‌آپ (before/after)
-  const container = document.querySelector('.container-img-prompts');
-  if (container) {
-    const before = container.querySelector('.before');
-    const slider = container.querySelector('.popup-slider');
-    let isDragging = false;
+const container = document.querySelector('.container-img-prompts');
+if (container) {
+  const before = container.querySelector('.before');
+  const slider = container.querySelector('.popup-slider');
+  let isDragging = false;
 
-    container.addEventListener('mousedown', e => {
-      isDragging = true;
-      moveSlider(e.clientX);
-    });
-    document.addEventListener('mouseup', () => isDragging = false);
-    document.addEventListener('mousemove', e => {
-      if (!isDragging) return;
-      moveSlider(e.clientX);
-    });
+  // موس
+  container.addEventListener('mousedown', e => {
+    isDragging = true;
+    moveSlider(e.clientX);
+  });
+  document.addEventListener('mouseup', () => isDragging = false);
+  document.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    moveSlider(e.clientX);
+  });
 
-    function moveSlider(x) {
-      const rect = container.getBoundingClientRect();
-      let offset = x - rect.left;
-      offset = Math.max(0, Math.min(offset, rect.width));
-      const percent = (offset / rect.width) * 100;
-      slider.style.transition = 'none';
-      before.style.transition = 'none';
-      slider.style.left = `${percent}%`;
-      before.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
-    }
+  // لمس (موبایل)
+  container.addEventListener('touchstart', e => {
+    isDragging = true;
+    moveSlider(e.touches[0].clientX);
+  });
+  document.addEventListener('touchend', () => isDragging = false);
+  document.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    moveSlider(e.touches[0].clientX);
+  });
+
+  function moveSlider(x) {
+    const rect = container.getBoundingClientRect();
+    let offset = x - rect.left;
+    offset = Math.max(0, Math.min(offset, rect.width));
+    const percent = (offset / rect.width) * 100;
+    slider.style.transition = 'none';
+    before.style.transition = 'none';
+    slider.style.left = `${percent}%`;
+    before.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
   }
+}
 });
 
 // تابع کپی کردن متن پرامپت

@@ -501,192 +501,91 @@ html {
 
 /* برای موبایل: مخفی کردن navbar و نمایش همبرگر */
 @media (max-width: 480px) {
-
+  /* Navbar و هدر */
   .navbar {
     position: fixed;
     top: 0;
     left: -100%;
-    /* ✅ تغییر از right به left */
     height: 100vh;
-    width: 300px;
+    width: 80vw;
+    max-width: 320px;
     background-color: var(--bg-color-hamberger-menu);
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 1.5rem;
     transition: left 0.3s ease-in-out;
-    /* ✅ تغییر transition به left */
     z-index: 999;
   }
+  .navbar.active { left: 0; }
+  .navbar__btn { display: none; }
+  .heder__icon { display: block; cursor: pointer; z-index: 1000; }
 
-  .navbar__btn {
-    display: none;
-  }
-
-  .navbar.active {
-    left: 0;
-    /* ✅ منو باز بشه از چپ */
-  }
-
-  .heder__icon {
-    display: block;
-    cursor: pointer;
-    z-index: 1000;
-  }
-
+  /* Home Section */
   .Home-title {
-    width: 430px;
-    font-size: 30px;
+    width: 90vw;
+    max-width: 100%;
+    font-size: 7vw;
     margin-bottom: 8px;
-
   }
-
   .Home-cption {
-    width: 400px;
-    font-size: 15px;
+    width: 90vw;
+    max-width: 100%;
+    font-size: 4vw;
     margin-bottom: 8px;
   }
-
   .Home-btn {
-    width: 249px;
-    height: 47.53px;
+    width: 90vw;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 8px;
   }
-
-  .Home-btn__left {
-    width: 91px;
-    height: 29.55px;
-    font-size: 10px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-  }
-
+  .Home-btn__left,
   .Home-btn__rigth {
-    width: 129px;
-    height: 29.55px;
-    font-size: 10px;
-    padding: 0;
+    width: 100%;
+    height: auto;
+    font-size: 3vw;
+    padding: 8px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
+  /* Poster Section */
   .poster {
     justify-content: flex-start;
     overflow-x: auto;
     flex-wrap: nowrap;
-    padding: 0 20px;
+    padding: 0 10vw;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-
   }
-
-
-  .poster::-webkit-scrollbar {
-    display: none;
-  }
-
+  .poster::-webkit-scrollbar { display: none; }
   .poster-cards {
     flex: 0 0 auto;
-    width: 70%;
-    scroll-snap-align: center;
-  }
-
-  .poster .poster-cards:nth-child(2) {
-    scroll-margin-left: 30%;
-  }
-
-  .poster-spacer {
-    flex: 0 0 calc(50vw - 106px);
-    pointer-events: none;
-  }
-
-  .fotter-top {
-    flex-direction: column;
-    width: 390px;
-    gap: 18px;
-  }
-
-  .fotter-tex h4 {
-    font-size: 13px;
-  }
-
-  .fotter-tex p {
-    font-size: 10px;
-    width: 342px;
-  }
-
-  .footer-links h4 {
-    font-size: 13px;
-  }
-
-  .fotter-linl-1 {
-    font-size: 10px;
-  }
-
-  .fotter-linl-2 {
-    font-size: 10px;
-  }
-
-  .fotter-item {
-    flex-direction: column;
-  }
-
-  .fotter-contact h4 {
-    font-size: 13px;
-    margin-top: 10px;
-  }
-
-  .fotter-contact-1 {
-    font-size: 10px;
-  }
-
-  .fotter-copyright {
-    font-size: 10px;
-  }
-
-  .footer-content__continer {
-    width: 342px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .fotter-contact-btn.footer-scroll-btn {
-    width: 38px;
-    height: 36px;
-  }
-
-  .poster-cards {
-    width: 70%;
-    height: 330px;
+    width: 70vw;
+    max-width: 320px;
     aspect-ratio: 3 / 4;
     border-radius: 20px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
   }
-
   .poster-card__content {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
     padding: 15px 12px 20px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.4);
     backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     gap: 12px;
-    /* فاصله بین متن و دکمه */
   }
-
   .poster-text {
     display: flex;
     justify-content: space-between;
@@ -695,19 +594,8 @@ html {
     color: white;
     font-size: 14px;
   }
-
-  .poster-text h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-  }
-
-  .poster-text p {
-    font-size: 14px;
-    margin: 0;
-    opacity: 0.9;
-  }
-
+  .poster-text h4 { font-size: 16px; font-weight: bold; margin: 0; }
+  .poster-text p { font-size: 14px; margin: 0; opacity: 0.9; }
   .poster-card__btn {
     background: white;
     border-radius: 15px;
@@ -720,12 +608,9 @@ html {
     transition: background 0.3s ease;
     width: 100%;
   }
+  .poster-card__btn:hover { background: #f0f0f0; }
 
-  .poster-card__btn:hover {
-    background: #f0f0f0;
-  }
-
-  /*------------------------------------------------indicator img------------------------------------------------------ */
+  /* Poster Indicators */
   .poster-indicators {
     display: flex;
     justify-content: center;
@@ -733,9 +618,7 @@ html {
     margin-top: 20px;
     gap: 8px;
     height: 14px;
-    /* ارتفاع کانتینر متناسب با اندازه دات‌ها */
   }
-
   .poster-indicators .dot {
     width: 8px;
     height: 8px;
@@ -745,72 +628,78 @@ html {
     opacity: 0.7;
     flex-shrink: 0;
   }
-
   .poster-indicators .dot.active {
     width: 12px;
     height: 12px;
-    border-radius: 50%;
     background-color: #3a3a3a;
     opacity: 1;
   }
 
-
-
-}
-
-@media (max-width: 480px) {
-  .gallary {
-    height: auto;
-    padding: 50px 20px;
-    margin-top: 50px;
+  /* Footer */
+  .fotter-top,
+  .fotter-item {
+    flex-direction: column;
+    width: 90vw;
+    max-width: 350px;
+    gap: 18px;
+  }
+  .fotter-tex h4,
+  .footer-links h4,
+  .fotter-contact h4 { font-size: 13px; }
+  .fotter-tex p,
+  .fotter-linl-1,
+  .fotter-linl-2,
+  .fotter-contact-1,
+  .fotter-copyright { font-size: 10px; }
+  .footer-content__continer {
+    width: 90vw;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fotter-contact-btn.footer-scroll-btn {
+    width: 38px;
+    height: 36px;
   }
 
+  /* Gallary Section */
+  .gallary {
+    height: auto;
+    padding: 10vw 4vw;
+    margin-top: 10vw;
+  }
   .gallary-item {
     flex-direction: column;
     width: 100%;
     gap: 30px;
   }
-
-  .gallary-item:nth-child(2) {
-    flex-direction: column;
-  }
-
+  .gallary-item:nth-child(2) { flex-direction: column; }
   .gallary-img {
     width: 100%;
     height: auto;
     max-width: 100%;
     aspect-ratio: 16 / 9;
   }
-
   .gallary-text {
     width: 100%;
     padding: 0;
     text-align: center;
   }
-
-  .gallary-text h4 {
-    font-size: 18px;
-  }
-
-  .gallary-text p {
-    font-size: 14px;
-  }
-
-  .gallary-item:nth-child(2) .gallary-text {
-    max-width: 100%;
-  }
-
-  .gallery-btn,
+  .gallary-text h4 { font-size: 4vw; }
+  .gallary-text p { font-size: 3vw; }
+  .gallary-item:nth-child(2) .gallary-text { max-width: 100%; }
+  .gallery-btn
+  ,
   .gallary-btn-Rigth {
     width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 3vw;
   }
-
   .gallary-btn-butten {
     flex-direction: column;
     gap: 15px;
-    font-size: 15px;
+    font-size: 3vw;
   }
 }
 
