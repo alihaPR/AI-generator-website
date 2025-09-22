@@ -500,7 +500,7 @@ html {
 
 
 /* برای موبایل: مخفی کردن navbar و نمایش همبرگر */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
   /* Navbar و هدر */
   .navbar {
