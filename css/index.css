@@ -775,6 +775,67 @@ html {
   }
 }
 
+@media (max-width: 375px){
+    .Home-btn {
+    width:270px;
+    max-width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+  }
+
+  .Home-btn__left {
+    width: 100px;
+    height: auto;
+    font-size: 3vw;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Home-btn__rigth {
+    width:150px ;
+    height: auto;
+    font-size: 3vw;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 320px){
+    .Home-btn {
+    width:250px;
+    max-width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+  }
+
+  .Home-btn__left {
+    width: 90px;
+    height: auto;
+    font-size: 3vw;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Home-btn__rigth {
+    width:130px ;
+    height: auto;
+    font-size: 3vw;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 
 /* --------------------------------------------------- */
