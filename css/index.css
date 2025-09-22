@@ -568,7 +568,7 @@ html {
   }
 
   .Home-btn__rigth {
-    width:170px ;
+    width: 170px;
     height: auto;
     font-size: 3vw;
     padding: 8px 0;
@@ -688,7 +688,7 @@ html {
   .fotter-item {
     flex-direction: column;
     width: 90vw;
-    max-width: 350px;
+    max-width: 300px;
     gap: 18px;
   }
 
@@ -696,6 +696,10 @@ html {
   .footer-links h4,
   .fotter-contact h4 {
     font-size: 13px;
+  }
+
+  .fotter-tex p {
+    width: 350px;
   }
 
   .fotter-tex p,
@@ -716,7 +720,7 @@ html {
 
   .fotter-contact-btn.footer-scroll-btn {
     width: 38px;
-    
+
     height: 36px;
 
   }
@@ -777,9 +781,9 @@ html {
   }
 }
 
-@media (max-width: 375px){
-    .Home-btn {
-    width:270px;
+@media (max-width: 375px) {
+  .Home-btn {
+    width: 270px;
     max-width: 100%;
     height: auto;
     flex-direction: row;
@@ -798,7 +802,7 @@ html {
   }
 
   .Home-btn__rigth {
-    width:150px ;
+    width: 150px;
     height: auto;
     font-size: 3vw;
     padding: 8px 0;
@@ -806,10 +810,52 @@ html {
     justify-content: center;
     align-items: center;
   }
+
+  .fotter-top,
+  .fotter-item {
+    flex-direction: column;
+    width: 90vw;
+    max-width: 350px;
+    gap: 18px;
+  }
+
+  .fotter-tex h4,
+  .footer-links h4,
+  .fotter-contact h4 {
+    font-size: 13px;
+  }
+
+  .fotter-tex p,
+  .fotter-linl-1,
+  .fotter-linl-2,
+  .fotter-contact-1,
+  .fotter-copyright {
+    font-size: 10px;
+  }
+
+  .footer-content__continer {
+    width: 90vw;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fotter-tex p {
+    width: 300px;
+  }
+
+  .fotter-contact-btn.footer-scroll-btn {
+    width: 38px;
+
+    height: 36px;
+
+  }
 }
-@media (max-width: 320px){
-    .Home-btn {
-    width:250px;
+
+@media (max-width: 320px) {
+  .Home-btn {
+    width: 250px;
     max-width: 100%;
     height: auto;
     flex-direction: row;
@@ -828,13 +874,54 @@ html {
   }
 
   .Home-btn__rigth {
-    width:130px ;
+    width: 130px;
     height: auto;
     font-size: 3vw;
     padding: 8px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .fotter-top,
+  .fotter-item {
+    flex-direction: column;
+    width: 90vw;
+    max-width: 350px;
+    gap: 18px;
+  }
+
+  .fotter-tex h4,
+  .footer-links h4,
+  .fotter-contact h4 {
+    font-size: 13px;
+  }
+
+  .fotter-tex p,
+  .fotter-linl-1,
+  .fotter-linl-2,
+  .fotter-contact-1,
+  .fotter-copyright {
+    font-size: 10px;
+  }
+
+  .footer-content__continer {
+    width: 90vw;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fotter-tex p {
+    width: 250px;
+  }
+
+  .fotter-contact-btn.footer-scroll-btn {
+    width: 38px;
+
+    height: 36px;
+
   }
 }
 
