@@ -29,10 +29,49 @@
             <li class="navbar__item">
                 <a href="/index.html" class="navbar__link" data-aos="fade-up" data-aos-delay="100">Home</a>
             </li>
+
             <li class="navbar__item dropdown">
-                <a href="#tools" class="navbar__link" data-aos="fade-up" data-aos-delay="150">Tools</a>
+                <!-- لینک اصلی Tools -->
+                <a href="#tools" class="navbar__link mobile-tools-toggle" data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    Tools
+                    <span class="arrow">&#9662;</span>
+                </a>
+
+                <!-- زیرمنو مخصوص موبایل -->
+                <ul class="mobile-submenu">
+                    <li><a data-popup="popup1"
+                            data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
+                            data-img-before="/image/202505182125312.webp" data-img-after="/image/20250518212531.webp"
+                            onclick="openPopup(this)">Image Upscaler</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Remove the background completely from this image, leaving only the main subject with a transparent or solid white background. Keep edges clean and natural."
+                            data-img-before="/image/imggallery2.webp" data-img-after="/image/imggallery.webp"
+                            onclick="openPopup(this)">Remove Backgrounds</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
+                            data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
+                            data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp"
+                            onclick="openPopup(this)">Social Glowr</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
+                            data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
+                            data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp" onclick="openPopup(this)">Skin
+                            Magic</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
+                            data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
+                            data-img-after="/image/1924164fff129f91b75158eaf944c137.webp"
+                            onclick="openPopup(this)">Product Poster</a></li>
+                    <li><a data-popup="popup1"
+                            data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
+                            data-img-before="/image/photo19483072295.jpg" data-img-after="/image/photo19452945200.webp"
+                            onclick="openPopup(this)">3*4 image</a></li>
+                </ul>
+
+                <!-- منوی پاپ‌آپ دسکتاپ -->
                 <div class="dropdown-menu">
-                    <div class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1" data-aos="zoom" data-aos-duration="1000"
                         data-prompt="Enhance this photo to ultra-high resolution (4K). Sharpen all facial features, hair texture, and clothing fabric while preserving natural skin tones and lighting. Remove any blur or noise, and improve overall clarity. Maintain the original background details like locker room wood texture, locker numbers, and lighting conditions. Keep color grading, shadows, and highlights realistic and natural. The goal is a clean, high-fidelity, photorealistic enhancement without any artistic or cartoon filters."
                         data-img-before="/image/202505182125312.webp" data-img-after="/image/20250518212531.webp"
                         onclick="openPopup(this)">
@@ -52,7 +91,7 @@
                             <p>Easily remove or change your photo background</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Create a professional and clean social media post image for [LinkedIn/Instagram/etc.], featuring a centered person in business attire, soft lighting, minimal background blur, and modern corporate color scheme. Add space for a text headline if needed."
                         data-img-before="/image/file_00000000d63861f4b79eb9ee4ddb175d.webp"
                         data-img-after="/image/b02d583083adf4ebec9b5be7b02b7c07.webp" onclick="openPopup(this)">
@@ -62,7 +101,7 @@
                             <p>Stylish visuals for modern social media posts</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Natural face portrait with subtle retouching: remove small imperfections and redness, soften skin texture slightly, preserve pores and natural lines. Balanced daylight lighting. Final image should feel authentic and human, not over-edited."
                         data-img-before="/image/file_00000000e23c61f489949f0462fa9c5d.webp"
                         data-img-after="/image/ffab117d53c7a71a4f97cb9b7b1341d3.webp" onclick="openPopup(this)">
@@ -72,7 +111,7 @@
                             <p>Clear, soft, and natural face retouch</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="A high-end commercial advertisement featuring a Pringles Sour Cream & Onion can placed on a reflective marble surface with a soft spotlight. Background is a luxurious, modern kitchen interior with bokeh lighting and a warm color palette (beige and gold tones). The can is sharply in focus, showing detailed textures, condensation droplets, and vibrant green packaging. Add floating chip slices, sour cream swirl, and onion rings subtly glowing around it. Use dramatic lighting with soft shadows and depth of field for cinematic feel. Include minimal text in clean sans-serif font at the top: “Irresistibly Bold Flavor.” Make it look like a premium magazine or billboard ad."
                         data-img-before="/image/file_000000005ddc6246a605f12ef59c102b.webp"
                         data-img-after="/image/1924164fff129f91b75158eaf944c137.webp" onclick="openPopup(this)">
@@ -82,7 +121,7 @@
                             <p>Eye-catching product ads with sharp design</p>
                         </div>
                     </div>
-                    <div class="dropdown-row" class="dropdown-row" data-popup="popup1"
+                    <div class="dropdown-row" data-popup="popup1"
                         data-prompt="Create a formal 3x4 passport-style portrait based on the provided image. The subject should face the camera directly with a neutral facial expression. Replace the background with a plain white one, and use professional studio lighting. Remove any accessories (such as hair bows), minimize visible makeup, and ensure the clothing appears modest and neat (e.g., a simple high-collar shirt or blouse). Center the composition and crop to standard ID photo proportions. Maintain high resolution and clarity suitable for identification documents."
                         data-img-before="/image/photo19483072295.jpg" data-img-after="/image/photo19452945200.webp"
                         onclick="openPopup(this)">
@@ -94,6 +133,7 @@
                     </div>
                 </div>
             </li>
+
             <li class="navbar__item">
                 <a href="/prompts.html" class="navbar__link" data-aos="fade-up" data-aos-delay="200">Prompts</a>
             </li>
@@ -846,8 +886,10 @@
         style="display:none;position:fixed;top:40px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 28px;border-radius:8px;z-index:9999;font-family:'Medium';font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,0.15);transition:opacity 0.3s;">
         prompt copied to clipboard!
     </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/script/theme.js"></script>
+    <script src="/script/menu.js"></script>
     <script src="/script/script.js"></script>
 </body>
 
