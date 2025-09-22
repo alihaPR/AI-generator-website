@@ -525,6 +525,7 @@ html {
     width: 90vw;
     max-width: 100%;
     font-size: 7vw;
+    
     margin-bottom: 8px;
   }
   .Home-cption {
@@ -540,9 +541,18 @@ html {
     flex-direction: column;
     gap: 8px;
   }
-  .Home-btn__left,
+  .Home-btn__left{
+    height: auto;
+    font-size: 3vw;
+    
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .Home-btn__rigth {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     font-size: 3vw;
     padding: 8px 0;
