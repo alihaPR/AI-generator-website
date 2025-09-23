@@ -685,9 +685,9 @@ html {
 
   .popup-box {
     position: relative;
-    width: 355px;
+    width: 370px;
     height: 100px;
-    margin-top: 65px;
+    margin-top:65px;
     padding: 8px 40px 8px 12px;
     border-radius: 12px;
     background-color: var(--bg-color-popup-box);
@@ -1241,5 +1241,310 @@ body,
 
   .arrow.open {
     transform: rotate(180deg);
+  }
+}
+
+
+@media (max-width: 375px) {
+  .popup {
+    align-items: flex-start;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .popup-content {
+    width: 95%;
+    height: auto;
+    /* max-height: 90%; */
+    border-radius: 16px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .popup-content-right {
+    order: -1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .popup-content-left {
+    order: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    touch-action: none;
+    /* برای جلوگیری از اسکرول ناخواسته در موبایل */
+  }
+
+  .popup-content-left h4 {
+    font-size: 14px;
+    margin-bottom: 16px;
+
+  }
+
+  .popup-menu {
+    /* list-style: none; */
+    padding: 0;
+    text-align: left;
+
+  }
+
+  .popup-menu-item {
+    font-size: 10px;
+    /* margin-bottom: 8px; */
+    margin-left: 30px;
+  }
+
+  .copy-not {
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .popup-box {
+    position: relative;
+    width: 324px;
+    height: 100px;
+    margin-top:65px;
+    padding: 8px 40px 8px 12px;
+    border-radius: 12px;
+    background-color: var(--bg-color-popup-box);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #promptText {
+    max-width: 260px;
+    font-size: 10px;
+    color: var(--text-color-box-popup);
+    text-align: start;
+    display: -webkit-box;
+    line-height: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: normal;
+    user-select: none;
+    max-height: calc(1.5em * 4);
+  }
+
+
+  .copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.2);
+    stroke: var(--text-color-1);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+  .container-img-prompts {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .container-img-prompts img.before,
+  .container-img-prompts img.after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .popup {
+    align-items: flex-start;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .popup-content {
+    width: 95%;
+    height: auto;
+    /* max-height: 90%; */
+    border-radius: 16px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .popup-content-right {
+    order: -1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .popup-content-left {
+    order: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    touch-action: none;
+    /* برای جلوگیری از اسکرول ناخواسته در موبایل */
+  }
+
+  .popup-content-left h4 {
+    font-size: 14px;
+    margin-bottom: 16px;
+
+  }
+
+  .popup-menu {
+    /* list-style: none; */
+    padding: 0;
+    text-align: left;
+
+  }
+
+  .popup-menu-item {
+    font-size: 10px;
+    /* margin-bottom: 8px; */
+    margin-left: 30px;
+  }
+
+  .copy-not {
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .popup-box {
+    position: relative;
+    width: 270px;
+    height: 100px;
+    margin-top:65px;
+    padding: 8px 40px 8px 12px;
+    border-radius: 12px;
+    background-color: var(--bg-color-popup-box);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #promptText {
+    max-width: 200px;
+    font-size: 10px;
+    color: var(--text-color-box-popup);
+    text-align: start;
+    display: -webkit-box;
+    line-height: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: normal;
+    user-select: none;
+    max-height: calc(1.5em * 4);
+  }
+
+
+  .copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.2);
+    stroke: var(--text-color-1);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+
+  .container-img-prompts {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .container-img-prompts img.before,
+  .container-img-prompts img.after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
   }
 }
