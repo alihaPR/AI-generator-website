@@ -66,11 +66,11 @@
 
 
 .poster-cards:nth-child(1) {
-  background-image: url(/image/dddd.webp);
+  background-image: url(/image/333.webp);
   background-size: cover;
   background-position: center;
 }.poster-cards:nth-child(2) {
-  background-image: url(/image/IMG_6532.webp);
+  background-image: url(/image/IMG_20251013_214812.jpg);
   background-size: cover;
   background-position: center;
 }.poster-cards:nth-child(3) {
