@@ -16,27 +16,25 @@
     }
     h1 { text-align: center; margin-bottom: 40px; }
     .post {
-      display: flex;
-      gap: 20px;
       border-bottom: 1px solid #ddd;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      align-items: flex-start;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
     }
     .post img {
-      width: 180px;
+      max-width: 100%;
       height: auto;
-      border-radius: 10px;
-      object-fit: cover;
-      flex-shrink: 0;
+      border-radius: 12px;
+      margin: 15px 0;
+      display: block;
     }
-    .post-content {
-      flex: 1;
+    .post h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #0073aa;
     }
-    .post h2 { font-size: 1.4rem; margin-bottom: 10px; }
-    .post p { color: #555; }
-    a { color: #0073aa; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .post a { text-decoration: none; color: #0073aa; }
+    .post a:hover { text-decoration: underline; }
+    .post p { color: #333; font-size: 1rem; }
   </style>
 </head>
 <body>
@@ -55,22 +53,14 @@
         const container = document.getElementById("posts");
         container.innerHTML = "";
 
-        data.items.slice(0, 6).forEach(item => {
+        data.items.forEach(item => {
           const post = document.createElement("div");
           post.className = "post";
 
-          // اگر عکس هست، نشون بده
-          const img = item.thumbnail
-            ? `<img src="${item.thumbnail}" alt="${item.title}">`
-            : "";
-
+          // اینجا کل HTML پست وردپرس رو مستقیم می‌ریزیم داخل صفحه
           post.innerHTML = `
-            ${img}
-            <div class="post-content">
-              <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-              <p>${item.description.replace(/<[^>]+>/g, "").substring(0, 500)}...</p>
-            </div>
-            `
+            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+            ${item.content}`
           ;
           container.appendChild(post);
         });
