@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
       background: #fff;
@@ -16,9 +16,22 @@
     }
     h1 { text-align: center; margin-bottom: 40px; }
     .post {
+      display: flex;
+      gap: 20px;
       border-bottom: 1px solid #ddd;
       margin-bottom: 30px;
       padding-bottom: 20px;
+      align-items: flex-start;
+    }
+    .post img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .post-content {
+      flex: 1;
     }
     .post h2 { font-size: 1.4rem; margin-bottom: 10px; }
     .post p { color: #555; }
@@ -32,7 +45,6 @@
 
   <script>
     async function loadFeed() {
-      // از سرویس rss2json برای رفع مشکل CORS استفاده می‌کنیم
       const rssUrl = encodeURIComponent("https://dreammorphblog.wordpress.com/feed/");
       const proxyUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + rssUrl;
 
@@ -43,12 +55,21 @@
         const container = document.getElementById("posts");
         container.innerHTML = "";
 
-        data.items.slice(0, 5).forEach(item => {
+        data.items.slice(0, 6).forEach(item => {
           const post = document.createElement("div");
           post.className = "post";
+
+          // اگر عکس هست، نشون بده
+          const img = item.thumbnail
+            ? `<img src="${item.thumbnail}" alt="${item.title}">`
+            : "";
+
           post.innerHTML = `
-            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-            <p>${item.description.replace(/<[^>]+>/g, "").substring(0, 200)}...</p>
+            ${img}
+            <div class="post-content">
+              <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+              <p>${item.description.replace(/<[^>]+>/g, "").substring(0, 500)}...</p>
+            </div>
             `
           ;
           container.appendChild(post);
