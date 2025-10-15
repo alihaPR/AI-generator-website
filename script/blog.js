@@ -1,6 +1,6 @@
   async function loadWordPressPosts() {
     const container = document.getElementById("blog-posts");
-    const feedUrl = "https://dreammorphblog.wordpress.com/feed/";
+    const feedUrl = "https://api.allorigins.win/raw?url=https://dreammorphblog.wordpress.com/feed/";
 
     try {
       const response = await fetch(feedUrl);
