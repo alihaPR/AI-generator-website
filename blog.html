@@ -6,7 +6,7 @@
   <title>Dreammorph Blog</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: system-ui, sans-serif;
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
@@ -26,6 +26,11 @@
       border-radius: 12px;
       margin: 15px 0;
       display: block;
+      filter: blur(8px);
+      transition: filter 0.4s ease;
+    }
+    .post img.loaded {
+      filter: blur(0);
     }
     .post h2 {
       font-size: 1.6rem;
@@ -49,7 +54,6 @@
       try {
         const res = await fetch(proxyUrl);
         const data = await res.json();
-
         const container = document.getElementById("posts");
         container.innerHTML = "";
 
@@ -57,22 +61,36 @@
           const post = document.createElement("div");
           post.className = "post";
 
-          // اصلاح مسیر عکس‌ها با پروکسی برای جلوگیری از بلاک شدن
+          // پروکسی برای عکس‌ها
           let safeContent = item.content.replace(
             /<img[^>]+src="([^">]+)"/g,
             (match, src) => {
               const proxy = "https://images.weserv.nl/?url=" + encodeURIComponent(src.replace(/^https?:\/\//, ""));
-              return` <img src="${proxy}"`;
+              return `<img data-src="${proxy}" alt="" loading="lazy"`;
             }
           );
 
           post.innerHTML = `
             <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-            ${safeContent}
-            `
+            ${safeContent}`
           ;
           container.appendChild(post);
         });
+
+        // Lazy-load observer
+        const lazyImages = document.querySelectorAll('img[data-src]');
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.onload = () => img.classList.add('loaded');
+              obs.unobserve(img);
+            }
+          });
+        }, { rootMargin: "200px" });
+
+        lazyImages.forEach(img => observer.observe(img));
       } catch (err) {
         document.getElementById("posts").innerText = "Error loading blog feed ❌";
         console.error(err);
