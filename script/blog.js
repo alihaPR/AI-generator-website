@@ -1,43 +1,37 @@
-// آدرس API وردپرس تو
-const apiURL = "https://public-api.wordpress.com/wp/v2/sites/dreammorphblog.wordpress.com/posts";
+  async function loadWordPressPosts() {
+    const container = document.getElementById("blog-posts");
+    const feedUrl = "https://dreammorphblog.wordpress.com/feed/";
 
-async function loadPosts() {
-  const container = document.getElementById("posts");
-  container.innerHTML = "<p>Loading posts...</p>";
+    try {
+      const response = await fetch(feedUrl);
+      const text = await response.text();
 
-  try {
-    const res = await fetch(apiURL);
-    const posts = await res.json();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, "application/xml");
 
-    container.innerHTML = ""; // پاک کردن پیام Loading
+      const items = xml.querySelectorAll("item");
+      let html = "";
 
-    posts.forEach((post) => {
-      const article = document.createElement("article");
-      article.classList.add("post");
+      items.forEach((el, index) => {
+        if (index < 5) { // فقط 5 پست اول رو نشون می‌ده
+          const title = el.querySelector("title").textContent;
+          const link = el.querySelector("link").textContent;
+          const description = el.querySelector("description").textContent;
 
-      // عنوان
-      const title = document.createElement("h2");
-      title.innerHTML = post.title.rendered;
+          html += 
+            <div class="post" style="margin-bottom: 40px;">
+              <h2><a href="${link}" target="_blank">${title}</a></h2>
+              <p>${description.substring(0, 200)}...</p>
+            </div>
+          ;
+        }
+      });
 
-      // خلاصه پست
-      const excerpt = document.createElement("div");
-      excerpt.innerHTML = post.excerpt.rendered;
-
-      // لینک پست کامل
-      const link = document.createElement("a");
-      link.href = post.link;
-      link.target = "_blank";
-      link.textContent = "Read more →";
-
-      // اضافه کردن عناصر
-      article.appendChild(title);
-      article.appendChild(excerpt);
-      article.appendChild(link);
-
-      container.appendChild(article);
-    });
-  } catch (error) {
-    container.innerHTML = "<p>Failed to load posts 😢</p>";
-    console.error("Error loading posts:", error);
+      container.innerHTML = html;
+    } catch (err) {
+      console.error("Error loading posts:", err);
+      container.innerHTML = "<p>Failed to load posts.</p>";
+    }
   }
-}
+
+  loadWordPressPosts();
