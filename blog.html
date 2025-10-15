@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="img-src * data: blob:;">
-    <title>Dreammorph Blog</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background: #fff;
-            color: #111;
-            line-height: 1.7;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .post {
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 50px;
-            padding-bottom: 30px;
-        }
-
-        .post img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 15px 0;
-            display: block;
-        }
-
-        .post h2 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-            color: #0073aa;
-        }
-
-        .post img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 15px 0;
-            display: block;
-            object-fit: cover;
-            background-color: transparent;
-        }
-
-        .post a {
-            text-decoration: none;
-            color: #0073aa;
-        }
-
-        .post a:hover {
-            text-decoration: underline;
-        }
-
-        .post p {
-            color: #333;
-            font-size: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreammorph Blog</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fff;
+      color: #111;
+      line-height: 1.7;
+    }
+    h1 { text-align: center; margin-bottom: 40px; }
+    .post {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
+    }
+    .post img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 15px 0;
+      display: block;
+    }
+    .post h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #0073aa;
+    }
+    .post a { text-decoration: none; color: #0073aa; }
+    .post a:hover { text-decoration: underline; }
+    .post p { color: #333; font-size: 1rem; }
+  </style>
 </head>
-
 <body>
-    <h1>Dreammorph Blog</h1>
-    <div id="posts">Loading posts...</div>
+  <h1>Dreammorph Blog</h1>
+  <div id="posts">Loading posts...</div>
 
-    <script>
-        async function loadFeed() {
-            const rssUrl = encodeURIComponent("https://dreammorphblog.wordpress.com/feed/");
-            const proxyUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + rssUrl;
+  <script>
+    async function loadFeed() {
+      const rssUrl = encodeURIComponent("https://dreammorphblog.wordpress.com/feed/");
+      const proxyUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + rssUrl;
 
-            try {
-                const res = await fetch(proxyUrl);
-                const data = await res.json();
+      try {
+        const res = await fetch(proxyUrl);
+        const data = await res.json();
 
-                const container = document.getElementById("posts");
-                container.innerHTML = "";
+        const container = document.getElementById("posts");
+        container.innerHTML = "";
 
-                data.items.forEach(item => {
-                    const post = document.createElement("div");
-                    post.className = "post";
+        data.items.forEach(item => {
+          const post = document.createElement("div");
+          post.className = "post";
 
-                    // اینجا کل HTML پست وردپرس رو مستقیم می‌ریزیم داخل صفحه
-                    post.innerHTML = `
-            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-            ${item.content}`
-                        ;
-                    container.appendChild(post);
-                });
-            } catch (err) {
-                document.getElementById("posts").innerText = "Error loading blog feed ❌";
-                console.error(err);
+          // اصلاح مسیر عکس‌ها با پروکسی برای جلوگیری از بلاک شدن
+          let safeContent = item.content.replace(
+            /<img[^>]+src="([^">]+)"/g,
+            (match, src) => {
+              const proxy = "https://images.weserv.nl/?url=" + encodeURIComponent(src.replace(/^https?:\/\//, ""));
+              return` <img src="${proxy}"`;
             }
-        }
+          );
 
-        loadFeed();
-    </script>
+          post.innerHTML = `
+            <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+            ${safeContent}
+            `
+          ;
+          container.appendChild(post);
+        });
+      } catch (err) {
+        document.getElementById("posts").innerText = "Error loading blog feed ❌";
+        console.error(err);
+      }
+    }
+
+    loadFeed();
+  </script>
 </body>
-
 </html>
