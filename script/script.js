@@ -322,6 +322,8 @@ window.addEventListener("load", () => {
 });
 
 
-
+  document.getElementById("blogBtn").onclick = function() {
+    window.open("https://blog.dreammorph.art", "_blank");
+  }
 
 
