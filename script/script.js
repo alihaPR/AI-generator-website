@@ -324,10 +324,9 @@ window.addEventListener("load", () => {
 
 
 document.getElementById('blogLink').addEventListener('click', function(e) {
-    e.preventDefault(); // جلوی رفتار پیش‌فرض مرورگر
-    e.stopPropagation(); // جلوی JS های دیگر که لینک را intercept می کنند
-    window.open('https://blog.dreammorph.art', '_blank'); // یا window.location.href برای همان تب
+    e.preventDefault();       // جلوگیری از رفتار پیش‌فرض
+    e.stopPropagation();      // جلوگیری از همه listenerهای دیگر
+    window.open('https://blog.dreammorph.art', '_blank'); // باز کردن در تب جدید
 });
-
 
 
