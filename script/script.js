@@ -323,6 +323,110 @@ window.addEventListener("load", () => {
 
 
 
+// ------------------------------------------------ popup text and other  -------------------------------------------------------
+
+function openPopup(element) {
+    const popupId = element.getAttribute("data-popup");
+    const popup = document.getElementById(popupId);
+
+    const promptText = element.getAttribute("data-prompt");
+    const imgBefore = element.getAttribute("data-img-before");
+    const imgAfter = element.getAttribute("data-img-after");
+    const type = element.getAttribute("data-type");
+
+    // تعیین متن مخصوص نوع پرامپت
+    let howToUseHTML = "";
+
+    if (type === "chatgpt") {
+        howToUseHTML = `
+            <h4>How to use this filter</h4>
+            <ul class="popup-menu">
+                <li class="popup-menu-item">
+                    Open <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
+                </li>
+                <li class="popup-menu-item">Select + And Select Your photo</li>
+                <li class="popup-menu-item">
+                    Copy The Command Below And Paste It Into 
+                    <a href="https://chat.openai.com/" target="_blank">ChatGpt</a> Ai
+                </li>
+            </ul>
+        `;
+    } else if (type === "benana") {
+        howToUseHTML = `
+            <h4>How to use this filter</h4>
+            <ul class="popup-menu">
+                <li class="popup-menu-item">
+                    Open <a href="https://nanobanana.ai/" target="_blank">Nanobanana</a> Ai
+                </li>
+                <li class="popup-menu-item">Select + And Select Your photo</li>
+                <li class="popup-menu-item">
+                    Copy The Command Below And Paste It Into 
+                    <a href="https://nanobanana.ai/" target="_blank">Nanobanana</a> Ai
+                </li>
+            </ul>
+        `;
+    } else {
+        howToUseHTML = `
+            <h4>How to use this filter</h4>
+            <ul class="popup-menu">
+                <li class="popup-menu-item">Open the related Ai platform</li>
+                <li class="popup-menu-item">Select + And Select Your photo</li>
+                <li class="popup-menu-item">Copy The Command Below And Paste It</li>
+            </ul>
+        `;
+    }
+
+    // مقداردهی درون پاپ‌آپ
+    const leftSection = popup.querySelector(".popup-content-left");
+    const boxContainer = `
+        <div class="box-container" id="boxContainer">
+            <div class="popup-box">
+                <span id="promptText">${promptText}</span>
+                <svg class="copy-btn" onclick="copyPrompt()" width="24" height="24" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.6665 20H5.33317C4.62593 20 3.94765 19.7191 3.44755 19.219C2.94746 18.7189 2.6665 18.0406 2.6665 17.3334V5.33335C2.6665 4.62611 2.94746 3.94783 3.44755 3.44774C3.94765 2.94764 4.62593 2.66669 5.33317 2.66669H17.3332C18.0404 2.66669 18.7187 2.94764 19.2188 3.44774C19.7189 3.94783 19.9998 4.62611 19.9998 5.33335V6.66669M14.6665 12H26.6665C28.1393 12 29.3332 13.1939 29.3332 14.6667V26.6667C29.3332 28.1394 28.1393 29.3334 26.6665 29.3334H14.6665C13.1937 29.3334 11.9998 28.1394 11.9998 26.6667V14.6667C11.9998 13.1939 13.1937 12 14.6665 12Z" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+    `;
+
+    leftSection.innerHTML = howToUseHTML + boxContainer;
+
+    popup.querySelector("#popupImageBefore").src = imgBefore;
+    popup.querySelector("#popupImageAfter").src = imgAfter;
+
+    popup.classList.add("active");
+}
+
+function closePopup(popupId) {
+    document.getElementById(popupId).classList.remove("active");
+}
+
+function copyPrompt() {
+    const prompt = document.getElementById("promptText").innerText;
+    navigator.clipboard.writeText(prompt);
+
+    const infoBar = document.getElementById("infoBar");
+    if (infoBar) {
+        infoBar.style.display = "block";
+        setTimeout(() => infoBar.style.display = "none", 2500);
+    }
+}
 
 
+// -------------------------------------------------------------------------------------------------------
 
+const posterContainer = document.querySelector('.poster');
+
+posterContainer.addEventListener('mouseover', (e) => {
+  const card = e.target.closest('.poster-cards.poster-zoom');
+  if (!card) return;
+  card.style.transform = 'scale(1.05)';
+  card.style.transition = 'transform 0.3s ease';
+});
+
+posterContainer.addEventListener('mouseout', (e) => {
+  const card = e.target.closest('.poster-cards.poster-zoom');
+  if (!card) return;
+  card.style.transform = 'scale(1)';
+});
