@@ -325,6 +325,7 @@ window.addEventListener("load", () => {
 
 // ------------------------------------------------ popup text and other  -------------------------------------------------------
 
+
 function openPopup(element) {
     const popupId = element.getAttribute("data-popup");
     const popup = document.getElementById(popupId);
