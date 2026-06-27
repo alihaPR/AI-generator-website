@@ -355,9 +355,9 @@
 
 }
 
-.hidden-card {
+/* .hidden-card {
   display: none;
-}
+} */
 
 .poster-cards {
   opacity: 1;
@@ -578,4 +578,27 @@
   .poster-card__btn:hover {
     background: #f0f0f0;
   }
+}
+
+
+
+
+/* ------------------------------ Pagination css ------------------------------------------ */
+
+.pagination {
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-top:20px;
+  padding: 22px 0;
+}
+.pagination button {
+  padding:6px 12px;
+  cursor:pointer;
+  border-radius: 4.4px;
+  border: none;
+}
+.pagination button.active {
+  background:#ff4f8b;
+  color:#fff;
 }
